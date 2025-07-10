@@ -1,0 +1,33 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "1. Introduction to HTML  \r 2. HTML Document Structure  \r 3. Text Elements (`<h1>` to `<h6>`, `<p>`, `<br>`, `<hr>`)  \r 4. Text Formatting Tags (`<b>`, `<i>`, `<u>`, `<strong>`, `<em>`)  \r 5. HTML Lists (Ordered & Unordered)  \r 6. Anchor Tags (`<a>` for links, emails, phone)  \r 7. Image Embedding (`<img>`)",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thalsi/html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thalsi/html/issues"
+  },
+  "homepage": "https://github.com/thalsi/html#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2"
+  },
+  "lint-staged": {
+  "*.{js,css,html}": [
+    "prettier --write"
+  ]
+}
+}
