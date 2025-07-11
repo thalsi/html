@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Your Project Title</title>
+    <meta name="description" content="Brief description of your project" />
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- CSS (replace with your actual stylesheet) -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Preload critical resources (optional) -->
+    <link
+      rel="preload"
+      href="font.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <a href="/" class="logo">Your Logo</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content">
+      <section class="hero">
+        <div class="container">
+          <h1>Welcome to Your Project</h1>
+          <p>A clean HTML5 template for modern web projects.</p>
+          <a href="#features" class="button">Learn More</a>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Key Features</h2>
+          <div class="grid">
+            <article>
+              <h3>Semantic HTML5</h3>
+              <p>Properly structured for SEO and accessibility.</p>
+            </article>
+            <article>
+              <h3>Responsive Ready</h3>
+              <p>Mobile-friendly from the start.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript (loaded at end of body) -->
+    <script>
+      // Auto-update copyright year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

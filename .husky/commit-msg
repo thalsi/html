@@ -1,2 +1,3 @@
 #!/bin/sh
-npx --no -- commitlint --edit "$(cat .git/COMMIT_EDITMSG)"
+echo "Valid commit types: feat, fix, docs, style, refactor, perf, test, chore, ci, build, revert";
+npx --no -- commitlint --edit .git/COMMIT_EDITMSG
