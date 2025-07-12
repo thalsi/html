@@ -139,8 +139,80 @@
 7. Comments (`<!-- Comment -->`)
 8. HTML Syntax Rules
 
-
-
 ---
+## 3. HTML Elements & Tags
+- An HTML tag is the basic building block of HTML. It defines how a piece of content should appear on a webpage.
+    1. What is Tags
+        - HTML tag is the basic building block of HTML.
+    2. What is Elements
+        - An HTML element includes: Opening tag, Content, Closing tag
 
+1. Opening & Closing Tags
+        - <p>This is a paragraph.</p>
+        -  Some tags are self-closing (void elements):
+            - <img src="image.jpg" alt="Image">
+            - <br>
+            - <hr>
+            - <input type="text">
 
+2. Types of HTML Elements
+| Type             | Example                             | Description                                      |
+| ---------------- | ----------------------------------- | ------------------------------------------------ |
+| **Block-level**  | `<div>`, `<p>`, `<h1>`, `<section>` | Starts on a new line, takes full width           |
+| **Inline**       | `<span>`, `<a>`, `<img>`            | Does not start new line, takes only needed width |
+| **Void (Empty)** | `<img>`, `<br>`, `<input>`          | Doesn’t have a closing tag                       |
+| **Nested**       | `<div><p>Text</p></div>`            | Elements inside another element                  |
+| **Semantic**     | `<article>`, `<nav>`, `<footer>`    | Adds meaning to the content                      |
+| **Non-semantic** | `<div>`, `<span>`                   | Just structure, no meaning                       |
+
+3. HTML Section Commenting
+    1. Syntax for HTML Comments
+    ```
+    <!-- This is a comment -->
+    ```
+    2. Section Commenting Examples
+        1. Basic Layout Sectioning
+        ```
+            <!-- ===================== -->
+            <!-- 🚀 Header Section Start -->
+            <!-- ===================== -->
+            <header>
+                <h1>Website Title</h1>
+            </header>
+            <!-- 🚀 Header Section End -->
+        ```
+
+        2. Navigation Block
+        ```
+            <!-- =============== -->
+            <!-- 📌 Nav Section -->
+            <!-- =============== -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                </ul>
+            </nav>
+
+        ```
+
+        3. Footer Section
+        ```
+            <!-- =================== -->
+            <!-- 🔻 Footer Section -->
+            <!-- =================== -->
+            <footer>
+                <p>&copy; 2025 MySite</p>
+            </footer>
+
+        ```
+4. Element Attributes
+- Tags can have attributes that provide additional information.
+- Common Attributes:
+    - id
+    - class
+    - style
+    - src (image or media source)
+    - href (hyperlink reference)
+    - alt (image description)
+    - type, name, value (form fields)
+---
