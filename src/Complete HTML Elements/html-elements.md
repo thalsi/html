@@ -5,24 +5,27 @@ A full list of HTML5 elements grouped by category, including element type, descr
 ---
 ## Global HTML Attributes
 
-| Attribute         | Description                                                              |
-| ----------------- | ------------------------------------------------------------------------ |
-| `class`           | Specifies one or more class names for the element (used in CSS/JS)       |
-| `id`              | Unique identifier for the element                                        |
-| `style`           | Inline CSS styles                                                        |
-| `title`           | Extra information shown as a tooltip                                     |
-| `hidden`          | Hides the element                                                        |
-| `tabindex`        | Sets the tab order of the element                                        |
-| `accesskey`       | Defines a keyboard shortcut to activate/focus the element                |
-| `draggable`       | Specifies whether the element can be dragged (`true`, `false`)           |
-| `spellcheck`      | Specifies if the element should be checked for spelling errors           |
-| `contenteditable` | Specifies if the element is editable (`true`, `false`)                   |
-| `dir`             | Text direction (`ltr`, `rtl`, `auto`)                                    |
-| `lang`            | Language of the element’s content (e.g., `en`, `fr`, `hi`)               |
-| `translate`       | Specifies whether the content is translatable (`yes`, `no`)              |
-| `data-*`          | Custom data attributes (e.g., `data-user-id="123"`)                      |
-| `role`            | Accessibility role (used by screen readers and assistive tech)           |
-| `aria-*`          | Accessibility attributes (ARIA: e.g., `aria-label`, `aria-hidden`, etc.) |
+## ✅ HTML Global Attributes Checklist
+
+| ✅ Done | 🏷️ Attribute         | 🌐 Description                                                           |
+|--------|----------------------|----------------------------------------------------------------------------|
+| [x]    | `class`              | Specifies one or more class names for the element (used in CSS/JS)         |
+| [x]    | `id`                 | Unique identifier for the element                                          |
+| [x]    | `style`              | Inline CSS styles                                                          |
+| [x]    | `title`              | Extra information shown as a tooltip                                       |
+| [x]    | `hidden`             | Hides the element                                                          |
+| [x]    | `tabindex`           | Sets the tab order of the element                                          |
+| [x]    | `accesskey`          | Defines a keyboard shortcut to activate/focus the element                  |
+| [x]    | `draggable`          | Specifies whether the element can be dragged (`true`, `false`)             |
+| [x]    | `spellcheck`         | Specifies if the element should be checked for spelling errors             |
+| [x]    | `contenteditable`    | Specifies if the element is editable (`true`, `false`)                     |
+| [x]    | `dir`                | Text direction (`ltr`, `rtl`, `auto`)                                      |
+| [x]    | `lang`               | Language of the element’s content (e.g., `en`, `fr`, `hi`)                 |
+| [x]    | `translate`          | Specifies whether the content is translatable (`yes`, `no`)                |
+| [x]    | `data-*`             | Custom data attributes (e.g., `data-user-id="123"`), All data-* become available as element.dataset.*                        |
+| [x]    | `role`               | Accessibility role (used by screen readers and assistive tech)             |
+| [x]    | `aria-*`             | Accessibility attributes (ARIA: e.g., `aria-label`, `aria-hidden`, etc.)   |
+
 
 ---
 
