@@ -46,29 +46,52 @@ A full list of HTML5 elements grouped by category, including element type, descr
 
 ## 🟦 Inline Text Semantics
 
-| Element    | Element Type | Description                        | Common Attributes                                   |
-| ---------- | ------------ | ---------------------------------- | --------------------------------------------------- |
-| `<a>`      | Inline       | Hyperlink to another page or place | `href`, `target`, `rel`, `download`, `type`, Global |
-| `<strong>` | Inline       | Strong importance (bold)           | Global attributes                                   |
-| `<em>`     | Inline       | Emphasized text (italic)           | Global attributes                                   |
-| `<span>`   | Inline       | Generic inline container           | Global attributes                                   |
-| `<mark>`   | Inline       | Highlighted or marked text         | Global attributes                                   |
-| `<abbr>`   | Inline       | Abbreviation or acronym            | `title`, Global attributes                          |
-| `<b>`      | Inline       | Bold text without importance       | Global attributes                                   |
-| `<i>`      | Inline       | Italic text without importance     | Global attributes                                   |
-| `<u>`      | Inline       | Underlined text                    | Global attributes                                   |
-| `<small>`  | Inline       | Smaller, less important text       | Global attributes                                   |
-| `<sub>`    | Inline       | Subscript text                     | Global attributes                                   |
-| `<sup>`    | Inline       | Superscript text                   | Global attributes                                   |
-| `<code>`   | Inline       | Inline code sample                 | Global attributes                                   |
-| `<kbd>`    | Inline       | Keyboard input                     | Global attributes                                   |
-| `<samp>`   | Inline       | Sample output                      | Global attributes                                   |
-| `<var>`    | Inline       | Variable in programming or math    | Global attributes                                   |
-| `<cite>`   | Inline       | Citation or reference              | Global attributes                                   |
-| `<del>`    | Inline       | Deleted (removed) text             | `cite`, `datetime`, Global attributes               |
-| `<ins>`    | Inline       | Inserted (added) text              | `cite`, `datetime`, Global attributes               |
+| ✅ Check | Element    | Element Type | Description                        | Common Attributes                                 |
+|---------|------------|--------------|------------------------------------|-----------------------------------------------------|
+| [x]     | `<a>`      | Inline       | Hyperlink to another page or place | `href`, `target`, `rel`, `download`, `type`, Global |
+| [x]     | `<strong>` | Inline       | Strong importance (bold)           | Global attributes                                   |
+| [x]     | `<em>`     | Inline       | Emphasized text (italic)           | Global attributes                                   |
+| [x]     | `<span>`   | Inline       | Generic inline container           | Global attributes                                   |
+| [x]     | `<mark>`   | Inline       | Highlighted or marked text         | Global attributes                                   |
+| [x]     | `<abbr>`   | Inline       | Abbreviation or acronym            | `title`, Global attributes                          |
+| [x]     | `<b>`      | Inline       | Bold text without importance       | Global attributes                                   |
+| [x]     | `<i>`      | Inline       | Italic text without importance     | Global attributes                                   |
+| [x]     | `<u>`      | Inline       | Underlined text                    | Global attributes                                   |
+| [x]     | `<small>`  | Inline       | Smaller, less important text       | Global attributes                                   |
+| [x]     | `<sub>`    | Inline       | Subscript text                     | Global attributes                                   |
+| [x]     | `<sup>`    | Inline       | Superscript text                   | Global attributes                                   |
+| [x]     | `<code>`   | Inline       | Inline code sample                 | Global attributes                                   |
+| [x]     | `<kbd>`    | Inline       | Keyboard input                     | Global attributes                                   |
+| [x]     | `<samp>`   | Inline       | Sample output                      | Global attributes                                   |
+| [x]     | `<var>`    | Inline       | Variable in programming or math    | Global attributes                                   |
+| [x]     | `<cite>`   | Inline       | Citation or reference              | Global attributes                                   |
+| [x]     | `<del>`    | Inline       | Deleted (removed) text             | `cite`, `datetime`, Global attributes               |
+| [x]     | `<ins>`    | Inline       | Inserted (added) text              | `cite`, `datetime`, Global attributes               |
 
 ---
+| Element    | Detailed Use Case                                                                                                                  |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `<a>`      | Link to another page, file, email, phone number, or anchor in the same page (e.g., navigation menu, "Read more" link).             |
+| `<strong>` | Highlight *critical* information like warnings, security messages, or instructions in bold for accessibility.                      |
+| `<em>`     | Emphasize or stress a word within a sentence to change the tone or meaning (e.g., "You **must** do this").                         |
+| `<span>`   | Apply custom styles, classes, or scripting to a part of text without affecting layout (e.g., color specific words).                |
+| `<mark>`   | Highlight important changes, search terms, or user-focused keywords (e.g., search result: "You searched for `<mark>HTML</mark>`"). |
+| `<abbr>`   | Provide full form on hover using `title` attribute (e.g., `<abbr title="World Health Organization">WHO</abbr>`).                   |
+| `<b>`      | Draw attention visually to names, headings, or labels (e.g., "Price: <b>\$99</b>"), but not semantically important.                |
+| `<i>`      | Add stylistic emphasis or use for foreign words, taxonomic names, or thoughts (e.g., "She murmured, <i>c’est la vie</i>").         |
+| `<u>`      | Indicate misspelled words, annotation, or clickable text in custom UI designs (e.g., underlined promo code).                       |
+| `<small>`  | Display legal disclaimers, copyright, or fine print (e.g., "© 2025 Your Company. All rights reserved.").                           |
+| `<sub>`    | Scientific or chemical notation (e.g., H<sub>2</sub>O), mathematical indices, or footnotes references.                             |
+| `<sup>`    | Exponents (e.g., x<sup>2</sup>), ordinal indicators (e.g., 1<sup>st</sup>), or reference superscripts (e.g., note<sup>1</sup>).    |
+| `<code>`   | Present code snippets or commands inline with other text (e.g., Use `<code>git status</code>` to check).                           |
+| `<kbd>`    | Show keyboard input combinations (e.g., Press <kbd>Ctrl</kbd> + <kbd>P</kbd> to print).                                            |
+| `<samp>`   | Show sample output from a computer program or shell command (e.g., `<samp>Hello, World!</samp>`).                                  |
+| `<var>`    | Represent mathematical variables or arguments (e.g., Area = <var>π</var> × <var>r</var><sup>2</sup>).                              |
+| `<cite>`   | Refer to a cited work like books, songs, movies (e.g., `<cite>To Kill a Mockingbird</cite>` by Harper Lee).                        |
+| `<del>`    | Indicate removed content, like tracking changes or price drops (e.g., <del>\$99.99</del> \$59.99).                                 |
+| `<ins>`    | Mark inserted content in a revision (e.g., Added terms: `<ins>Free shipping</ins>`).                                               |
+
+----
 
 ## 🟩 Text Content
 
