@@ -51,15 +51,15 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 | ✅ | Element      | Type   | Description                              | Key Attributes |
 |----|-------------|--------|------------------------------------------|----------------|
-| [ ]| `<header>`  | Block  | Introductory content                     | None           |
-| [ ]| `<footer>`  | Block  | Footer content                           | None           |
-| [ ]| `<nav>`     | Block  | Navigation links                         | None           |
-| [ ]| `<main>`    | Block  | Main content of page                     | None           |
-| [ ]| `<article>` | Block  | Self-contained composition               | None           |
-| [ ]| `<section>` | Block  | Thematic grouping of content             | None           |
-| [ ]| `<aside>`   | Block  | Sidebar or supplementary content         | None           |
-| [ ]| `<h1>`–`<h6>`| Block | Headings (h1 = most important)           | None           |
-| [ ]| `<address>` | Block  | Contact information                      | None           |
+| [x]| `<header>`  | Block  | Introductory content                     | None           |
+| [x]| `<footer>`  | Block  | Footer content                           | None           |
+| [x]| `<nav>`     | Block  | Navigation links                         | None           |
+| [x]| `<main>`    | Block  | Main content of page                     | None           |
+| [x]| `<article>` | Block  | Self-contained composition               | None           |
+| [x]| `<section>` | Block  | Thematic grouping of content             | None           |
+| [x]| `<aside>`   | Block  | Sidebar or supplementary content         | None           |
+| [x]| `<h1>`–`<h6>`| Block | Headings (h1 = most important)           | None           |
+| [x]| `<address>` | Block  | Contact information                      | None           |
 
 ---
 
