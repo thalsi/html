@@ -87,27 +87,27 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 | ✅ | Element     | Type   | Description                      | Key Attributes            |
 |----|------------|--------|----------------------------------|---------------------------|
-| [ ]| `<a>`      | Inline | Hyperlink                        | `href`, `target`, `rel`   |
-| [ ]| `<strong>` | Inline | Important text (bold)            | None                      |
-| [ ]| `<em>`     | Inline | Emphasized text (italic)         | None                      |
-| [ ]| `<mark>`   | Inline | Highlighted text                 | None                      |
-| [ ]| `<small>`  | Inline | Side comments or fine print      | None                      |
-| [ ]| `<del>`    | Inline | Deleted/removed text             | `cite`, `datetime`        |
-| [ ]| `<ins>`    | Inline | Inserted text                    | `cite`, `datetime`        |
-| [ ]| `<sub>`    | Inline | Subscript                        | None                      |
-| [ ]| `<sup>`    | Inline | Superscript                      | None                      |
-| [ ]| `<code>`   | Inline | Inline code                      | None                      |
-| [ ]| `<kbd>`    | Inline | Keyboard input                   | None                      |
-| [ ]| `<samp>`   | Inline | Sample output                    | None                      |
-| [ ]| `<var>`    | Inline | Variable                         | None                      |
-| [ ]| `<abbr>`   | Inline | Abbreviation                     | `title`                   |
-| [ ]| `<time>`   | Inline | Time/date with machine-readability | `datetime`              |
-| [ ]| `<bdi>`    | Inline | Isolate bidirectional text       | None                      |
-| [ ]| `<bdo>`    | Inline | Override text direction          | `dir`                     |
-| [ ]| `<ruby>`   | Inline | Ruby annotation (East Asian)     | None                      |
-| [ ]| `<rt>`     | Inline | Ruby pronunciation               | None                      |
-| [ ]| `<rp>`     | Inline | Fallback for ruby                | None                      |
-| [ ]| `<wbr>`    | Void   | Line break opportunity           | None                      |
+| [x]| `<a>`      | Inline | Hyperlink                        | `href`, `target`, `rel`   |
+| [x]| `<strong>` | Inline | Important text (bold)            | None                      |
+| [x]| `<em>`     | Inline | Emphasized text (italic)         | None                      |
+| [x]| `<mark>`   | Inline | Highlighted text                 | None                      |
+| [x]| `<small>`  | Inline | Side comments or fine print      | None                      |
+| [x]| `<del>`    | Inline | Deleted/removed text             | `cite`, `datetime`        |
+| [x]| `<ins>`    | Inline | Inserted text                    | `cite`, `datetime`        |
+| [x]| `<sub>`    | Inline | Subscript                        | None                      |
+| [x]| `<sup>`    | Inline | Superscript                      | None                      |
+| [x]| `<code>`   | Inline | Inline code                      | None                      |
+| [x]| `<kbd>`    | Inline | Keyboard input                   | None                      |
+| [x]| `<samp>`   | Inline | Sample output                    | None                      |
+| [x]| `<var>`    | Inline | Variable ( programming or math)  | None                      |
+| [x]| `<abbr>`   | Inline | Abbreviation (fullform ISRO,ISL) | `title`                   |
+| [x]| `<time>`   | Inline | Time/date with machine-readability | `datetime`              |
+| [x]| `<bdi>`    | Inline | Isolate bidirectional text (arbic text)| None                |
+| [x]| `<bdo>`    | Inline | Override text direction          | `dir`                     |
+| [x]| `<ruby>`   | Inline | Ruby annotation (East Asian)     | None                      |
+| [x]| `<rt>`     | Inline | Ruby pronunciation               | None                      |
+| [x]| `<rp>`     | Inline | Fallback for ruby                | None                      |
+| [x]| `<wbr>`    | Void   | Line break opportunity           | None                      |
 
 ---
 
