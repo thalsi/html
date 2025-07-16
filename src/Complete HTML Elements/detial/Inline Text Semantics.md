@@ -67,19 +67,19 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 | ✅ | Element        | Type   | Description                         | Key Attributes              |
 |----|---------------|--------|-------------------------------------|-----------------------------|
-| [ ]| `<p>`         | Block  | Paragraph                           | None                        |
-| [ ]| `<br>`        | Void   | Line break                          | None                        |
-| [ ]| `<hr>`        | Void   | Thematic break                      | None                        |
-| [ ]| `<pre>`       | Block  | Preformatted text                   | None                        |
-| [ ]| `<blockquote>`| Block  | Long quotation                      | `cite`                      |
-| [ ]| `<ol>`        | Block  | Ordered list                        | `type`, `start`, `reversed` |
-| [ ]| `<ul>`        | Block  | Unordered list                      | None                        |
-| [ ]| `<li>`        | Block  | List item                           | `value`                     |
-| [ ]| `<dl>`        | Block  | Description list                    | None                        |
-| [ ]| `<dt>`        | Block  | Term in description list            | None                        |
-| [ ]| `<dd>`        | Block  | Description/definition              | None                        |
-| [ ]| `<div>`       | Block  | Generic container                   | None                        |
-| [ ]| `<span>`      | Inline | Generic inline container            | None                        |
+| [x]| `<p>`         | Block  | Paragraph                           | None                        |
+| [x]| `<br>`        | Void   | Line break                          | None                        |
+| [x]| `<hr>`        | Void   | Thematic break                      | None                        |
+| [x]| `<pre>`       | Block  | Preformatted text                   | None                        |
+| [x]| `<blockquote>`| Block  | Long quotation                      | `cite`                      |
+| [x]| `<ol>`        | Block  | Ordered list                        | `type`, `start`, `reversed` |
+| [x]| `<ul>`        | Block  | Unordered list                      | None                        |
+| [x]| `<li>`        | Block  | List item                           | `value`                     |
+| [x]| `<dl>`        | Block  | Description list                    | None                        |
+| [x]| `<dt>`        | Block  | Term in description list            | None                        |
+| [x]| `<dd>`        | Block  | Description/definition              | None                        |
+| [x]| `<div>`       | Block  | Generic container                   | None                        |
+| [x]| `<span>`      | Inline | Generic inline container            | None                        |
 
 ---
 
