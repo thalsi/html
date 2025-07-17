@@ -136,16 +136,16 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 | ✅ | Element      | Type   | Description             | Key Attributes            |
 |----|-------------|--------|-------------------------|---------------------------|
-| [ ]| `<table>`    | Block  | Table container         | None                      |
-| [ ]| `<caption>`  | Block  | Table title             | None                      |
-| [ ]| `<thead>`    | Block  | Table header            | None                      |
-| [ ]| `<tbody>`    | Block  | Table body              | None                      |
-| [ ]| `<tfoot>`    | Block  | Table footer            | None                      |
-| [ ]| `<tr>`       | Block  | Table row               | None                      |
-| [ ]| `<td>`       | Block  | Table cell              | `colspan`, `rowspan`      |
-| [ ]| `<th>`       | Block  | Header cell             | `colspan`, `rowspan`, `scope` |
-| [ ]| `<col>`      | Void   | Column definition       | `span`                    |
-| [ ]| `<colgroup>` | Block  | Group of columns        | `span`                    |
+| [x]| `<table>`    | Block  | Table container         | None                      |
+| [x]| `<caption>`  | Block  | Table title             | None                      |
+| [x]| `<thead>`    | Block  | Table header            | None                      |
+| [x]| `<tbody>`    | Block  | Table body              | None                      |
+| [x]| `<tfoot>`    | Block  | Table footer            | None                      |
+| [x]| `<tr>`       | Block  | Table row               | None                      |
+| [x]| `<td>`       | Block  | Table cell              | `colspan`, `rowspan`      |
+| [x]| `<th>`       | Block  | Header cell             | `colspan`, `rowspan`, `scope` |
+| [x]| `<col>`      | Void   | Column definition       | `span`                    |
+| [x]| `<colgroup>` | Block  | Group of columns        | `span`                    |
 
 ---
 
