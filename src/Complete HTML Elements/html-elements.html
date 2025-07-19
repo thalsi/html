@@ -18,35 +18,29 @@
     <link rel="icon" href="favicon.ico" />
   </header>
   <body>
-    <form method="post" action="/submit">
-      <label for="username"> Text for Username</label>
+    <form action="/api-path" method="post">
+      <label for="username">User Name</label>
       <input
         type="text"
-        name="username"
         id="username"
-        class="formcontrol"
-        value="G"
-        placeholder="Enter username"
-        maxlength="10"
-        minlength="3"
-        required
-        autocomplete="name"
-      />
-      <input
-        type="text"
         name="username"
-        id="username"
         class="formcontrol"
-        value="G"
-        placeholder="Enter username"
+        value=""
+        minlength="5"
         maxlength="10"
-        minlength="3"
-        required
-        autocomplete="name"
+        autocomplete="given-name"
         autofocus
+        required
+        pattern="[A-Za-z]"
+        title="Alzhabelct small letter and Captal letter"
+        spellcheck="false"
+        inputmode="text"
+        placeholder="Enter you name"
+        size="20"
       />
 
-      <button type="submit">Submit</button>
+      <label for="password">Password</label>
+      <input type="password" />
     </form>
   </body>
 </html>

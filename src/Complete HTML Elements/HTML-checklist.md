@@ -168,35 +168,47 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [ ]| `<meter>`    | Inline | Scalar measurement     | `min`, `max`, `value`              |
 | [ ]| `<progress>` | Inline | Progress indicator     | `max`, `value`                     |
 
+
+### 1. <form>
+
+| Attribute        | Description                                                               | Example                         |
+| ---------------- | ------------------------------------------------------------------------- | ------------------------------- |
+| `action`         | URL where the form data will be submitted                                 | `action="/submit-form"`         |
+| `method`         | HTTP method to submit the form (`get` or `post`)                          | `method="post"`                 |
+| `enctype`        | Encoding type for form data (used with `post` method)                     | `enctype="multipart/form-data"` |
+| `name`           | Name of the form (useful in JavaScript)                                   | `name="loginForm"`              |
+| `target`         | Specifies where to open the result (`_self`, `_blank`, `_parent`, `_top`) | `target="_blank"`               |
+| `autocomplete`   | Turns autocomplete on/off for form fields                                 | `autocomplete="on"`             |
+| `novalidate`     | Disables native browser validation for the form                           | `novalidate`                    |
+| `rel`            | Specifies relationship (useful with `target="_blank"`)                    | `rel="noopener noreferrer"`     |
+| `accept-charset` | Character encodings the server can handle                                 | `accept-charset="UTF-8"`        |
 ---
-
-## Full <input> Types Reference Table
+### 2. <input> 
  
-| **Input Type**   | **Use Case**                          | **All Supported Attributes**                                                                                                                                                                                            |
-| ---------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `text`           | Single-line text (e.g. name, address) | `type`, `name`, `id`, `class`, `value`, `placeholder`, `required`, `readonly`, `disabled`, `maxlength`, `minlength`, `autocomplete`, `autofocus`, `pattern`, `form`, `title`, `spellcheck`, `inputmode`, `list`, `size` |
-| `password`       | Hidden input for passwords            | All from `text`, commonly with `pattern` and `autocomplete="current-password"` or `new-password`                                                                                                                        |
-| `email`          | Validated email entry                 | All from `text` + `multiple`, `inputmode=email`, `autocomplete=email`, `pattern`                                                                                                                                        |
-| `number`         | Only numeric input                    | `min`, `max`, `step`, `value`, `placeholder`, `required`, `readonly`, `disabled`, `autocomplete`, `inputmode=numeric`, `form`, `title`, `id`, `class`, `name`                                                           |
-| `tel`            | Telephone input                       | Same as `text`, + `pattern`, `autocomplete=tel`, `inputmode=tel`                                                                                                                                                        |
-| `url`            | Website or link entry                 | Same as `text`, + `pattern`, `autocomplete=url`, `inputmode=url`                                                                                                                                                        |
-| `search`         | Search bar (clearable by browser)     | Same as `text`, usually with `autocomplete`, `placeholder`, `list`                                                                                                                                                      |
-| `checkbox`       | Boolean or multiple-choice toggle     | `name`, `value`, `checked`, `required`, `disabled`, `autofocus`, `form`, `title`, `id`, `class`                                                                                                                         |
-| `radio`          | Select one option from a group        | Same as `checkbox`, must share the same `name` value in the group                                                                                                                                                       |
-| `date`           | Select a calendar date                | `min`, `max`, `value`, `required`, `disabled`, `readonly`, `autocomplete`, `form`, `autofocus`, `title`, `inputmode`, `name`, `id`, `class`                                                                             |
-| `time`           | Select a time value                   | Same as `date`, includes `step` for seconds                                                                                                                                                                             |
-| `datetime-local` | Select date and time (no timezone)    | Same as `date`, used for precise scheduling                                                                                                                                                                             |
-| `month`          | Select month & year                   | Same as `date`, used for credit card expiry, billing periods                                                                                                                                                            |
-| `week`           | Select week & year                    | Same as `date`, used for weekly planning                                                                                                                                                                                |
-| `file`           | Upload files                          | `name`, `accept`, `multiple`, `required`, `disabled`, `form`, `id`, `class`, `capture`, `title`                                                                                                                         |
-| `range`          | Slider for numeric value              | `min`, `max`, `step`, `value`, `name`, `required`, `disabled`, `autofocus`, `form`, `id`, `class`, `title`                                                                                                              |
-| `color`          | Pick a color using browser UI         | `value`, `name`, `required`, `disabled`, `readonly`, `autofocus`, `form`, `id`, `class`, `title`                                                                                                                        |
-| `submit`         | Submit a form                         | `value`, `form`, `formaction`, `formenctype`, `formmethod`, `formtarget`, `formnovalidate`, `id`, `class`, `title`, `name`                                                                                              |
-| `reset`          | Reset form to original values         | `value`, `form`, `id`, `class`, `title`, `name`                                                                                                                                                                         |
-| `button`         | Custom button (used with JavaScript)  | `value`, `onclick`, `form`, `id`, `class`, `title`, `name`                                                                                                                                                              |
-| `image`          | Submit button with an image           | `src`, `alt`, `width`, `height`, `formaction`, `formenctype`, `formmethod`, `formtarget`, `formnovalidate`, `value`, `form`, `title`, `id`, `class`, `name`                                                             |
-| `hidden`         | Hidden form field (backend data)      | `name`, `value`, `form`, `id`, `class`                                                                                                                                                                                  |
-
+|  Input Type      | Description                           |
+| ---------------- | ------------------------------------- | 
+| `text`           | Single-line text (e.g. name, address) |
+| `password`       | Hidden input for passwords            | 
+| `email`          | Validated email entry                 |
+| `number`         | Only numeric input                    |
+| `tel`            | Telephone input                       |
+| `url`            | Website or link entry                 | 
+| `search`         | Search bar (clearable by browser)     |
+| `checkbox`       | Boolean or multiple-choice toggle     | 
+| `radio`          | Select one option from a group        | 
+| `date`           | Select a calendar date                |
+| `time`           | Select a time value                   | 
+| `datetime-local` | Select date and time (no timezone)    | 
+| `month`          | Select month & year                   | 
+| `week`           | Select week & year                    | 
+| `file`           | Upload files                          | 
+| `range`          | Slider for numeric value              | 
+| `color`          | Pick a color using browser UI         | 
+| `submit`         | Submit a form                         | 
+| `reset`          | Reset form to original values         |
+| `button`         | Custom button (used with JavaScript)  |
+| `image`          | Submit button with an image           |
+| `hidden`         | Hidden form field (backend data)      |
 ---
 
 ## 🕹️ Interactive Elements
