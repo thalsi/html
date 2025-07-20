@@ -171,128 +171,129 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 ### 1. <form>
 
-| Attribute        | Description                                                               | Example                         |
-| ---------------- | ------------------------------------------------------------------------- | ------------------------------- |
-| `action`         | URL where the form data will be submitted                                 | `action="/submit-form"`         |
-| `method`         | HTTP method to submit the form (`get` or `post`)                          | `method="post"`                 |
-| `enctype`        | Encoding type for form data (used with `post` method)                     | `enctype="multipart/form-data"` |
-| `name`           | Name of the form (useful in JavaScript)                                   | `name="loginForm"`              |
-| `target`         | Specifies where to open the result (`_self`, `_blank`, `_parent`, `_top`) | `target="_blank"`               |
-| `autocomplete`   | Turns autocomplete on/off for form fields                                 | `autocomplete="on"`             |
-| `novalidate`     | Disables native browser validation for the form                           | `novalidate`                    |
-| `rel`            | Specifies relationship (useful with `target="_blank"`)                    | `rel="noopener noreferrer"`     |
-| `accept-charset` | Character encodings the server can handle                                 | `accept-charset="UTF-8"`        |
+| ✅ | Attribute        | Description                                                               | Example                         |
+|----| ---------------- | ------------------------------------------------------------------------- | ------------------------------- |
+| [ ]| `action`         | URL where the form data will be submitted                                 | `action="/submit-form"`         |
+| [ ]| `method`         | HTTP method to submit the form (`get` or `post`)                          | `method="post"`                 |
+| [ ]| `enctype`        | Encoding type for form data (used with `post` method)                     | `enctype="multipart/form-data"` |
+| [ ]| `name`           | Name of the form (useful in JavaScript)                                   | `name="loginForm"`              |
+| [ ]| `target`         | Specifies where to open the result (`_self`, `_blank`, `_parent`, `_top`) | `target="_blank"`               |
+| [ ]| `autocomplete`   | Turns autocomplete on/off for form fields                                 | `autocomplete="on"`             |
+| [ ]| `novalidate`     | Disables native browser validation for the form                           | `novalidate`                    |
+| [ ]| `rel`            | Specifies relationship (useful with `target="_blank"`)                    | `rel="noopener noreferrer"`     |
+| [ ]| `accept-charset` | Character encodings the server can handle                                 | `accept-charset="UTF-8"`        |
 ---
+
 ### 2. <input> 
  
 |  Input Type      | Description                           |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `text`           | Single-line text (e.g. name, address) | `type`, `name`, `id`, `class`, `value`, `placeholder`  |
+|  [x]`text`       | Single-line text (e.g. name, address) | `type`, `name`, `id`, `class`, `value`, `placeholder`  |
 |                  |                                       | `required`, `readonly`, `disabled`, `maxlength`,`size` |
 |                  |                                       | `minlength`, `autocomplete`, `autofocus`, `pattern`    |
 |                  |                                       | `form`, `title`, `spellcheck`, `inputmode`, `list`     |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `password`       | Hidden input for passwords            |  Same as `text`                                        |
+|  [x]`password`   | Hidden input for passwords            |  Same as `text`                                        |
 |                  |                                       |  plus: `pattern`                                       |
 |                  |                                       | `autocomplete="current-password"` or `"new-password"`  |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `email`          | Validated email entry                 |  Same as `text`                                        |
+|  [x]`email`      | Validated email entry                 |  Same as `text`                                        |
 |                  |                                       |  plus: `multiple`, `inputmode="email"`,                |
 |                  |                                       |  `autocomplete="email"`, `pattern`                     |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `number`         | Only numeric input                    | `type`, `name`, `id`, `class`, `value`, `min`, `max`,  |
+|  [x]`number`     | Only numeric input                    | `type`, `name`, `id`, `class`, `value`, `min`, `max`,  |
 |                  |                                       | `step`, `placeholder`, `required`, `readonly`, `title` |
 |                  |                                       | `disabled`, `autocomplete`, `inputmode="numeric"`,     |
 |                  |                                       | `form`                                                 |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `tel`            | Telephone input                       |  Same as `text`,                                       |
+|  [x]`tel`        | Telephone input                       |  Same as `text`,                                       |
 |                  |                                       |  plus: `pattern`, `autocomplete="tel"`,                |
 |                  |                                       | `inputmode="tel"`                                      |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `url`            | Website or link entry                 |  Same as `text`,                                       |
+|  [x]`url`        | Website or link entry                 |  Same as `text`,                                       |
 |                  |                                       |  plus: `pattern`, `autocomplete="url"`                 |
 |                  |                                       | `inputmode="url"`                                      |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `search`         | Search bar (clearable by browser)     |  Same as `text`                                        |
+|  [x]`search`     | Search bar (clearable by browser)     |  Same as `text`                                        |
 |                  |                                       |  plus: `autocomplete`, `list`, `placeholder`           |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `checkbox`       | Boolean or multiple-choice toggle     | `type`, `name`, `id`, `class`                          |
+|  [x]`checkbox`   | Boolean or multiple-choice toggle     | `type`, `name`, `id`, `class`                          |
 |                  |                                       | `value`, `checked`, `required`, `disabled`             |
 |                  |                                       | `autofocus`, `form`, `title`                           |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `radio`          | Select one option from a group        |  Same as `checkbox`                                    |
+|  [x]`radio`      | Select one option from a group        |  Same as `checkbox`                                    |
 |                  |                                       | (must share the same `name` with other radios in group)|
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `date`           | Select a calendar date                | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
+|  [ ]`date`       | Select a calendar date                | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
 |                  |                                       | `required`, `disabled`, `readonly`, `autocomplete`,    |
 |                  |                                       | `form`, `autofocus`, `title`, `inputmode`              |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `time`           | Select a time value                   |  Same as `date`                                        |
+|  [ ]`time`       | Select a time value                   |  Same as `date`                                        |
 |                  |                                       |  plus: `step` (e.g., seconds interval)                 |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `datetime-local` | Select date and time (no timezone)    |  Same as `date`                                        |
+|  [ ]`datetime-local`| Select date and time (no timezone) |  Same as `date`                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `month`          | Select month & year                   |  Same as `date`                                        |
+|  [ ]`month`      | Select month & year                   |  Same as `date`                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `week`           | Select week & year                    |  Same as `date`                                        |
+|  [ ]`week`       | Select week & year                    |  Same as `date`                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `file`           | Upload files                          | `type`, `name`, `id`, `class`, `accept`,               |
+|  [ ]`file`       | Upload files                          | `type`, `name`, `id`, `class`, `accept`,               |
 |                  |                                       | `multiple`, `required`, `disabled`,                    |
 |                  |                                       | `form`, `capture`, `title`                             |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `range`          | Slider for numeric value              | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
+|  [ ]`range`      | Slider for numeric value              | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
 |                  |                                       | `step`, `required`, `disabled`, `autofocus`, `form`,   |
 |                  |                                       | `title`                                                |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `color`          | Pick a color using browser UI         | `type`, `name`, `id`, `class`, `value`                 |
+|  [ ]`color`      | Pick a color using browser UI         | `type`, `name`, `id`, `class`, `value`                 |
 |                  |                                       | `required`, `disabled`, `readonly`                     |
 |                  |                                       | `autofocus`, `form`, `title`                           |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `submit`         | Submit a form                         | `type`, `name`, `id`, `class`, `value`                 |
+|  [ ]`submit`     | Submit a form                         | `type`, `name`, `id`, `class`, `value`                 |
 |                  |                                       | `form`, `formaction`, `formenctype`, `formmethod`      |
 |                  |                                       | `formtarget`, `formnovalidate`, `title`                |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `reset`          | Reset form to original values         | `type`, `name`, `id`, `class`                          |
+|  [ ]`reset`      | Reset form to original values         | `type`, `name`, `id`, `class`                          |
 |                  |                                       | `value`, `form`, `title`                               |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `button`         | Custom button (used with JavaScript)  | `type`, `name`, `id`, `class`                          |
+|  [ ]`button`     | Custom button (used with JavaScript)  | `type`, `name`, `id`, `class`                          |
 |                  |                                       | `value`, `onclick`, `form`, `title`                    |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `image`          | Submit button with an image           | `type`, `name`, `id`, `class`, `value`                 |
+|  [ ]`image`      | Submit button with an image           | `type`, `name`, `id`, `class`, `value`                 |
 |                  |                                       | `form`, `src`, `alt`, `width`, `height`, `formaction`  |
 |                  |                                       | `formenctype`, `formmethod`, `formtarget`,             |
 |                  |                                       | `formnovalidate`, `title`                              |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-| `hidden`         | Hidden form field (backend data)      | `type`, `name`, `id`, `class`,                         |
+|  [ ]`hidden`     | Hidden form field (backend data)      | `type`, `name`, `id`, `class`,                         |
 |                  |                                       | `value`, `form`                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |

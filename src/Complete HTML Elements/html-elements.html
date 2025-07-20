@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <header>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
@@ -19,28 +19,228 @@
   </header>
   <body>
     <form action="/api-path" method="post">
-      <label for="username">User Name</label>
+      <label for="username" id="usernameLabel">User Name</label>
       <input
         type="text"
         id="username"
         name="username"
+        data-id="usernameId"
         class="formcontrol"
         value=""
-        minlength="5"
-        maxlength="10"
-        autocomplete="given-name"
-        autofocus
+        placeholder="Enter your name"
+        title="Enter you name in alfabatic"
         required
-        pattern="[A-Za-z]"
-        title="Alzhabelct small letter and Captal letter"
+        minlength="3"
+        maxlength="30"
+        autocomplete="name"
+        autofocus
+        pattern="[A-za-z]"
         spellcheck="false"
         inputmode="text"
-        placeholder="Enter you name"
-        size="20"
+        list="names"
+        aria-labelledby="usernameLabel"
+        aria-required="true"
+        aria-describedby="usernameHelp errorMdg"
+        aria-invalid="true"
+      />
+      <small id="usernameHelp" hidden>Enter your registerd username.</small>
+      <div id="errorMdg" style="color: red">User name required.</div>
+
+      <datalist id="names">
+        <option value="hanman"></option>
+        <option value="buffer"></option>
+      </datalist>
+
+      <label id="passwordLabel" for="password">Password</label>
+
+      <input
+        type="password"
+        id="password"
+        name="password"
+        data-id="data-password"
+        placeholder="Enter password"
+        value=""
+        minlength="3"
+        maxlength="30"
+        required
+        autocomplete="current-password"
+        pattern="(?=.*\d)(?=.*[a-zA-Z]).{.8,}"
+        title="password must be uppercase lowercase and number"
+        spellcheck="false"
+        accesskey="p"
+        inputmode="name"
+        aria-labelledby="passwordLabel"
+        aria-required="true"
+        aria-describedby="passwordHelp passworderror"
+        aria-invalid="true"
       />
 
-      <label for="password">Password</label>
-      <input type="password" />
+      <small id="passwordHelp" hidden
+        >password must be uppercase lowercase and number</small
+      >
+      <div id="passworderror" style="color: red">User name required.</div>
+
+      <label id="emailLabel" for="email">Email</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        class="formcontrol"
+        placeholder="Enter you mail"
+        spellcheck="false"
+        required
+        data-id="data-email-id"
+        value=""
+        minlength="5"
+        maxlength="30"
+        autocomplete="email"
+        title="email must be required"
+        inputmode="email"
+        aria-labelledby="emailLabel"
+        aria-required="true"
+        aria-describedby="emailHelp emailError"
+        aria-invalid="true"
+      />
+      <small id="emailHelp"> email should be use </small>
+      <div id="emailError">email requild</div>
+
+      <label for="numberLabel">Number</label>
+      <input
+        type="number"
+        id="numberId"
+        name="numberId"
+        data-id="numberId"
+        placeholder="Enter your age"
+        min="5"
+        max="90"
+        autocomplete=""
+        title="enter you age"
+        inputmode="numeric"
+        spellcheck="false"
+        value=""
+        step="1"
+      />
+
+      <label id="telId" for="telLabel">Tel</label>
+      <input
+        type="tel"
+        id="telId"
+        name="telId"
+        data-id="telId"
+        class="formcontrol"
+        value=""
+        placeholder="Enter you telephone"
+        title="Enter your telephone"
+        inputmode="tel"
+        pattern="[0-9]"
+        spellcheck="false"
+        accesskey="t"
+        tabindex="0"
+        maxlength="10"
+        autofocus
+      />
+
+      <label for="urlLabel" id="urlId">URL</label>
+      <input
+        type="url"
+        id="urlId"
+        name="urlId"
+        data-id="urlId"
+        class="formcontrol"
+        placeholder="Enter your URL"
+        title="Give your URL"
+        inputmode="url"
+        pattern="[a-zA-Z]"
+        spellcheck="false"
+        accesskey="u"
+        tabindex="0"
+        maxlength="30"
+        autocomplete="url"
+      />
+
+      <label for="search" id="searchLabel">Search</label>
+      <input
+        type="search"
+        id="searchId"
+        name="searchId"
+        data-id="searchId"
+        class="formcontrol"
+        placeholder="Enter your search"
+        inputmode="numeric"
+        pattern="[a-zA-Z]"
+        spellcheck="false"
+        accesskey="u"
+        tabindex="0"
+        maxlength="30"
+        autocomplete="on"
+        list="dataList"
+      />
+      <datalist id="datalist">
+        <option value="username"></option>
+        <option value="username 1"></option>
+        <option value="username 2"></option>
+      </datalist>
+
+      <label for="checkBoxLabel" id="checkBoxId">
+        <input
+          type="checkbox"
+          id="checkBoxId"
+          name="checkBoxId"
+          data-id="checkBoxId"
+          class="formcontrol"
+          value="my-check-box"
+          required
+          aria-checked="true"
+          aria-labelledby="checkBoxLabel"
+        />
+        I agree the team condtion
+      </label>
+
+      <h1>skills</h1>
+      <label for="skills" id="skills">
+        <input
+          type="checkbox"
+          id="skills"
+          name="skills"
+          data-id="skills"
+          class="formcontrol"
+          value="new"
+          required
+          aria-checked="true"
+          aria-labelledby="checkBoxLabel"
+        />
+        new
+      </label>
+
+      <input
+        type="checkbox"
+        id="checkBoxskillsId"
+        name="skills"
+        data-id="checkBoxskillsId"
+        class="formcontrol"
+        value="html"
+        checked
+        required
+        aria-checked="true"
+        aria-labelledby="checkBoxLabel"
+      />
+
+      <h6>Redio button</h6>
+
+      <label for="radioLablelMale" id="radioLablelMale">
+        <input type="radio" id="male" name="radioGroup" value="male" checked />
+        male
+      </label>
+      <label for="female" id="female">
+        <input
+          type="radio"
+          id="female"
+          name="radioGroup"
+          value="male"
+          checked
+        />
+        female
+      </label>
     </form>
   </body>
 </html>
