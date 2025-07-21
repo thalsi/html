@@ -241,6 +241,77 @@
         />
         female
       </label>
+
+      <label for="dob" id="dobLabel">Date of Birth: </label>
+      <input
+        type="date"
+        id="dob"
+        name="dob"
+        class="formcontrol"
+        required
+        value=""
+        autocomplete="bday"
+        max="2025-12-01"
+        min="2025-05-01"
+        title="Enter you title"
+        tabindex="0"
+        inputmode="numeric"
+        placeholder="Enter your date of Birth"
+        pattern=""
+        data-id="bob"
+        aria-labelledby="dobLabel"
+        aria-required="true"
+        step="7"
+        aria-describedby="dobhelp"
+      />
+      <small id="dobhelp">Please select your data of birth</small>
+
+      <label for="time" id="timeLabel">Time </label>
+      <input
+        type="time"
+        id="time"
+        name="time"
+        class="formcontrol"
+        required
+        value=""
+        autocomplete="off"
+        min="09:00"
+        max="17:00"
+        step="1800"
+        title="Enter you title"
+        tabindex="0"
+        inputmode="numeric"
+        placeholder="Enter your time"
+        pattern=""
+        data-id="bob"
+        aria-labelledby="timeLabel"
+        aria-required="true"
+        aria-describedby="timehelp"
+      />
+      <small id="timehelp">Please select your time</small>
+
+      <label for="datetimeLocalLabl" id="dateTimeLocalLabel"
+        >Date and Time</label
+      >
+      <input
+        type="datetime-local"
+        id="dateTime"
+        name="dateTime"
+        data-id="dateTime"
+        placeholder="Enter date time"
+        class="formcontrol"
+        required
+        min=""
+        max=""
+        autocomplete="off"
+        tabindex="0"
+        title="enter you date time"
+        accesskey="d"
+        aria-labelledby="dateTimeLocalLabel"
+        aria-required="true"
+        aria-describedby="helpDateTime"
+      />
+      <small id="helpDateTime">help time and date</small>
     </form>
   </body>
 </html>

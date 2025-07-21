@@ -173,15 +173,15 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 | ✅ | Attribute        | Description                                                               | Example                         |
 |----| ---------------- | ------------------------------------------------------------------------- | ------------------------------- |
-| [ ]| `action`         | URL where the form data will be submitted                                 | `action="/submit-form"`         |
-| [ ]| `method`         | HTTP method to submit the form (`get` or `post`)                          | `method="post"`                 |
-| [ ]| `enctype`        | Encoding type for form data (used with `post` method)                     | `enctype="multipart/form-data"` |
-| [ ]| `name`           | Name of the form (useful in JavaScript)                                   | `name="loginForm"`              |
-| [ ]| `target`         | Specifies where to open the result (`_self`, `_blank`, `_parent`, `_top`) | `target="_blank"`               |
-| [ ]| `autocomplete`   | Turns autocomplete on/off for form fields                                 | `autocomplete="on"`             |
-| [ ]| `novalidate`     | Disables native browser validation for the form                           | `novalidate`                    |
-| [ ]| `rel`            | Specifies relationship (useful with `target="_blank"`)                    | `rel="noopener noreferrer"`     |
-| [ ]| `accept-charset` | Character encodings the server can handle                                 | `accept-charset="UTF-8"`        |
+| [x]| `action`         | URL where the form data will be submitted                                 | `action="/submit-form"`         |
+| [x]| `method`         | HTTP method to submit the form (`get` or `post`)                          | `method="post"`                 |
+| [x]| `enctype`        | Encoding type for form data (used with `post` method)                     | `enctype="multipart/form-data"` |
+| [x]| `name`           | Name of the form (useful in JavaScript)                                   | `name="loginForm"`              |
+| [x]| `target`         | Specifies where to open the result (`_self`, `_blank`, `_parent`, `_top`) | `target="_blank"`               |
+| [x]| `autocomplete`   | Turns autocomplete on/off for form fields                                 | `autocomplete="on"`             |
+| [x]| `novalidate`     | Disables native browser validation for the form                           | `novalidate`                    |
+| [x]| `rel`            | Specifies relationship (useful with `target="_blank"`)                    | `rel="noopener noreferrer"`     |
+| [x]| `accept-charset` | Character encodings the server can handle                                 | `accept-charset="UTF-8"`        |
 ---
 
 ### 2. <input> 
@@ -233,17 +233,17 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`date`       | Select a calendar date                | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
+|  [x]`date`       | Select a calendar date                | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
 |                  |                                       | `required`, `disabled`, `readonly`, `autocomplete`,    |
-|                  |                                       | `form`, `autofocus`, `title`, `inputmode`              |
+|                  |                                       | `form`, `autofocus`, `title`, `inputmode`, `step`      |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`time`       | Select a time value                   |  Same as `date`                                        |
+|  [x]`time`       | Select a time value                   |  Same as `date`                                        |
 |                  |                                       |  plus: `step` (e.g., seconds interval)                 |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`datetime-local`| Select date and time (no timezone) |  Same as `date`                                        |
+|  [x]`datetime-local`| Select date and time (no timezone) |  Same as `date`                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
