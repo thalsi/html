@@ -154,7 +154,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | ✅ | Element      | Type   | Description            | Key Attributes                     |
 |----|-------------|--------|------------------------|------------------------------------|
 | [x]| `<form>`     | Block  | Form                   | `action`, `method`, `enctype`      |
-| [ ]| `<input>`    | Void   | Input field            | `type`, `name`, `placeholder`, `required` |
+| [x]| `<input>`    | Void   | Input field            | `type`, `name`, `placeholder`, `required` |
 | [ ]| `<textarea>` | Block  | Multi-line text input  | `rows`, `cols`, `placeholder`      |
 | [ ]| `<button>`   | Inline | Button                 | `type`, `disabled`                 |
 | [ ]| `<select>`   | Inline | Dropdown               | `name`, `multiple`                 |
@@ -248,52 +248,52 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`month`      | Select month & year                   |  Same as `date`                                        |
+|  [x]`month`      | Select month & year                   |  Same as `date`                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`week`       | Select week & year                    |  Same as `date`                                        |
+|  [x]`week`       | Select week & year                    |  Same as `date`                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`file`       | Upload files                          | `type`, `name`, `id`, `class`, `accept`,               |
+|  [x]`file`       | Upload files                          | `type`, `name`, `id`, `class`, `accept`,               |
 |                  |                                       | `multiple`, `required`, `disabled`,                    |
 |                  |                                       | `form`, `capture`, `title`                             |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`range`      | Slider for numeric value              | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
+|  [x]`range`      | Slider for numeric value              | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
 |                  |                                       | `step`, `required`, `disabled`, `autofocus`, `form`,   |
 |                  |                                       | `title`                                                |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`color`      | Pick a color using browser UI         | `type`, `name`, `id`, `class`, `value`                 |
+|  [x]`color`      | Pick a color using browser UI         | `type`, `name`, `id`, `class`, `value`                 |
 |                  |                                       | `required`, `disabled`, `readonly`                     |
 |                  |                                       | `autofocus`, `form`, `title`                           |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`submit`     | Submit a form                         | `type`, `name`, `id`, `class`, `value`                 |
+|  [x]`submit`     | Submit a form                         | `type`, `name`, `id`, `class`, `value`                 |
 |                  |                                       | `form`, `formaction`, `formenctype`, `formmethod`      |
 |                  |                                       | `formtarget`, `formnovalidate`, `title`                |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`reset`      | Reset form to original values         | `type`, `name`, `id`, `class`                          |
+|  [x]`reset`      | Reset form to original values         | `type`, `name`, `id`, `class`                          |
 |                  |                                       | `value`, `form`, `title`                               |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`button`     | Custom button (used with JavaScript)  | `type`, `name`, `id`, `class`                          |
+|  [x]`button`     | Custom button (used with JavaScript)  | `type`, `name`, `id`, `class`                          |
 |                  |                                       | `value`, `onclick`, `form`, `title`                    |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`image`      | Submit button with an image           | `type`, `name`, `id`, `class`, `value`                 |
+|  [x]`image`      | Submit button with an image           | `type`, `name`, `id`, `class`, `value`                 |
 |                  |                                       | `form`, `src`, `alt`, `width`, `height`, `formaction`  |
 |                  |                                       | `formenctype`, `formmethod`, `formtarget`,             |
 |                  |                                       | `formnovalidate`, `title`                              |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
-|  [ ]`hidden`     | Hidden form field (backend data)      | `type`, `name`, `id`, `class`,                         |
+|  [x]`hidden`     | Hidden form field (backend data)      | `type`, `name`, `id`, `class`,                         |
 |                  |                                       | `value`, `form`                                        |
 |                  |                                       |                                                        |
 |                  |                                       |                                                        |

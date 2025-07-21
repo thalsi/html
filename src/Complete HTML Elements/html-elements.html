@@ -312,6 +312,80 @@
         aria-describedby="helpDateTime"
       />
       <small id="helpDateTime">help time and date</small>
+
+      <label for="mothLabl">Month</label>
+      <input type="month" value="" />
+
+      <label for="weekLabel">Week</label>
+      <input type="week" id="weekId" name="weekId" step="1" />
+
+      <hr />
+
+      <label id="fileUploadLabelId" for="fileLabel">File Upload</label>
+      <input
+        type="file"
+        id="fileuploadId"
+        name="fileuploadId"
+        class="formcontrol"
+        accept="image/*"
+        multiple
+      />
+
+      <hr />
+      <label for="rangeId">Volome</label>
+      <input
+        type="range"
+        id="rangeId"
+        name="rangeId"
+        class="formcontrol"
+        min="0"
+        max="100"
+        value="50"
+        step="5"
+      />
+
+      <hr />
+      <label for="colorLabel">Color</label>
+      <input
+        type="color"
+        id="colorLabel"
+        name="colorLabel"
+        class="formcontrol"
+        value="#fff000"
+      />
+
+      <hr />
+      <input
+        type="submit"
+        formaction="submit.php"
+        formenctype="application/x-www-form-urlencoded multipart/form-data text/plain"
+        formmethod="post"
+        formnovalidate
+        value="Sent Now"
+      />
+
+      <input type="reset" name="Reset Value" name="resetbtn" id="resetbtn" />
+      <input
+        type="button"
+        name="button"
+        value="Custom button"
+        name="resetbtn"
+        id="resetbtn"
+      />
+      <button type="button">Button</button>
+
+      <input
+        type="image"
+        id="imageId"
+        name="imageId"
+        class="formcontrol"
+        src="../../assets/images/animal.jpg"
+        width="100"
+        height="30"
+      />
+
+      <hr />
+      <input type="hidden" id="hiddenId" name="hiddenId" value="12123" />
     </form>
   </body>
 </html>
