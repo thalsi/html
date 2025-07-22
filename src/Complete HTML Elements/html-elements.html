@@ -18,374 +18,120 @@
     <link rel="icon" href="favicon.ico" />
   </header>
   <body>
-    <form action="/api-path" method="post">
-      <label for="username" id="usernameLabel">User Name</label>
-      <input
-        type="text"
-        id="username"
-        name="username"
-        data-id="usernameId"
-        class="formcontrol"
-        value=""
-        placeholder="Enter your name"
-        title="Enter you name in alfabatic"
-        required
-        minlength="3"
-        maxlength="30"
-        autocomplete="name"
-        autofocus
-        pattern="[A-za-z]"
-        spellcheck="false"
-        inputmode="text"
-        list="names"
-        aria-labelledby="usernameLabel"
-        aria-required="true"
-        aria-describedby="usernameHelp errorMdg"
-        aria-invalid="true"
-      />
-      <small id="usernameHelp" hidden>Enter your registerd username.</small>
-      <div id="errorMdg" style="color: red">User name required.</div>
+    <form id="form">
+      <label for="city">City</label>
+      <select name="city[]" id="city" multiple>
+        <option value="canda">canda</option>
+        <option value="uk">uk</option>
+        <option value="china" selected>china</option>
+        <option value="japan">japan</option>
+      </select>
 
-      <datalist id="names">
-        <option value="hanman"></option>
-        <option value="buffer"></option>
+      <label for="multi">Multi</label>
+      <select name="multi" id="multi">
+        <optgroup label="city">
+          <option value="uk">uk</option>
+          <option value="new yourk">new yourk</option>
+          <option value="Dubhai">Dubhi</option>
+        </optgroup>
+        <optgroup label="fruit">
+          <option value="apple">apple</option>
+          <option value="mango">mango</option>
+        </optgroup>
+      </select>
+
+      <fieldset>
+        <legend>Personal info</legend>
+
+        <label for="name">Name</label>
+        <input
+          type="text"
+          placeholder="enter your name"
+          id="name"
+          name="name"
+        />
+
+        <label for="age">Age</label>
+        <input type="number" placeholder="Enter age" id="age" name="age" />
+      </fieldset>
+
+      <label for="work">Work</label>
+      <input type="text" id="work" list="worklist" />
+
+      <datalist id="worklist">
+        <option value="sinor sf"></option>
+        <option value="junior sf"></option>
       </datalist>
 
-      <label id="passwordLabel" for="password">Password</label>
-
-      <input
-        type="password"
-        id="password"
-        name="password"
-        data-id="data-password"
-        placeholder="Enter password"
-        value=""
-        minlength="3"
-        maxlength="30"
-        required
-        autocomplete="current-password"
-        pattern="(?=.*\d)(?=.*[a-zA-Z]).{.8,}"
-        title="password must be uppercase lowercase and number"
-        spellcheck="false"
-        accesskey="p"
-        inputmode="name"
-        aria-labelledby="passwordLabel"
-        aria-required="true"
-        aria-describedby="passwordHelp passworderror"
-        aria-invalid="true"
-      />
-
-      <small id="passwordHelp" hidden
-        >password must be uppercase lowercase and number</small
-      >
-      <div id="passworderror" style="color: red">User name required.</div>
-
-      <label id="emailLabel" for="email">Email</label>
-      <input
-        type="text"
-        id="email"
-        name="email"
-        class="formcontrol"
-        placeholder="Enter you mail"
-        spellcheck="false"
-        required
-        data-id="data-email-id"
-        value=""
-        minlength="5"
-        maxlength="30"
-        autocomplete="email"
-        title="email must be required"
-        inputmode="email"
-        aria-labelledby="emailLabel"
-        aria-required="true"
-        aria-describedby="emailHelp emailError"
-        aria-invalid="true"
-      />
-      <small id="emailHelp"> email should be use </small>
-      <div id="emailError">email requild</div>
-
-      <label for="numberLabel">Number</label>
-      <input
-        type="number"
-        id="numberId"
-        name="numberId"
-        data-id="numberId"
-        placeholder="Enter your age"
-        min="5"
-        max="90"
-        autocomplete=""
-        title="enter you age"
-        inputmode="numeric"
-        spellcheck="false"
-        value=""
-        step="1"
-      />
-
-      <label id="telId" for="telLabel">Tel</label>
-      <input
-        type="tel"
-        id="telId"
-        name="telId"
-        data-id="telId"
-        class="formcontrol"
-        value=""
-        placeholder="Enter you telephone"
-        title="Enter your telephone"
-        inputmode="tel"
-        pattern="[0-9]"
-        spellcheck="false"
-        accesskey="t"
-        tabindex="0"
-        maxlength="10"
-        autofocus
-      />
-
-      <label for="urlLabel" id="urlId">URL</label>
-      <input
-        type="url"
-        id="urlId"
-        name="urlId"
-        data-id="urlId"
-        class="formcontrol"
-        placeholder="Enter your URL"
-        title="Give your URL"
-        inputmode="url"
-        pattern="[a-zA-Z]"
-        spellcheck="false"
-        accesskey="u"
-        tabindex="0"
-        maxlength="30"
-        autocomplete="url"
-      />
-
-      <label for="search" id="searchLabel">Search</label>
-      <input
-        type="search"
-        id="searchId"
-        name="searchId"
-        data-id="searchId"
-        class="formcontrol"
-        placeholder="Enter your search"
-        inputmode="numeric"
-        pattern="[a-zA-Z]"
-        spellcheck="false"
-        accesskey="u"
-        tabindex="0"
-        maxlength="30"
-        autocomplete="on"
-        list="dataList"
-      />
-      <datalist id="datalist">
-        <option value="username"></option>
-        <option value="username 1"></option>
-        <option value="username 2"></option>
-      </datalist>
-
-      <label for="checkBoxLabel" id="checkBoxId">
-        <input
-          type="checkbox"
-          id="checkBoxId"
-          name="checkBoxId"
-          data-id="checkBoxId"
-          class="formcontrol"
-          value="my-check-box"
-          required
-          aria-checked="true"
-          aria-labelledby="checkBoxLabel"
-        />
-        I agree the team condtion
-      </label>
-
-      <h1>skills</h1>
-      <label for="skills" id="skills">
-        <input
-          type="checkbox"
-          id="skills"
-          name="skills"
-          data-id="skills"
-          class="formcontrol"
-          value="new"
-          required
-          aria-checked="true"
-          aria-labelledby="checkBoxLabel"
-        />
-        new
-      </label>
-
-      <input
-        type="checkbox"
-        id="checkBoxskillsId"
-        name="skills"
-        data-id="checkBoxskillsId"
-        class="formcontrol"
-        value="html"
-        checked
-        required
-        aria-checked="true"
-        aria-labelledby="checkBoxLabel"
-      />
-
-      <h6>Redio button</h6>
-
-      <label for="radioLablelMale" id="radioLablelMale">
-        <input type="radio" id="male" name="radioGroup" value="male" checked />
-        male
-      </label>
-      <label for="female" id="female">
-        <input
-          type="radio"
-          id="female"
-          name="radioGroup"
-          value="male"
-          checked
-        />
-        female
-      </label>
-
-      <label for="dob" id="dobLabel">Date of Birth: </label>
-      <input
-        type="date"
-        id="dob"
-        name="dob"
-        class="formcontrol"
-        required
-        value=""
-        autocomplete="bday"
-        max="2025-12-01"
-        min="2025-05-01"
-        title="Enter you title"
-        tabindex="0"
-        inputmode="numeric"
-        placeholder="Enter your date of Birth"
-        pattern=""
-        data-id="bob"
-        aria-labelledby="dobLabel"
-        aria-required="true"
-        step="7"
-        aria-describedby="dobhelp"
-      />
-      <small id="dobhelp">Please select your data of birth</small>
-
-      <label for="time" id="timeLabel">Time </label>
-      <input
-        type="time"
-        id="time"
-        name="time"
-        class="formcontrol"
-        required
-        value=""
-        autocomplete="off"
-        min="09:00"
-        max="17:00"
-        step="1800"
-        title="Enter you title"
-        tabindex="0"
-        inputmode="numeric"
-        placeholder="Enter your time"
-        pattern=""
-        data-id="bob"
-        aria-labelledby="timeLabel"
-        aria-required="true"
-        aria-describedby="timehelp"
-      />
-      <small id="timehelp">Please select your time</small>
-
-      <label for="datetimeLocalLabl" id="dateTimeLocalLabel"
-        >Date and Time</label
-      >
-      <input
-        type="datetime-local"
-        id="dateTime"
-        name="dateTime"
-        data-id="dateTime"
-        placeholder="Enter date time"
-        class="formcontrol"
-        required
-        min=""
-        max=""
-        autocomplete="off"
-        tabindex="0"
-        title="enter you date time"
-        accesskey="d"
-        aria-labelledby="dateTimeLocalLabel"
-        aria-required="true"
-        aria-describedby="helpDateTime"
-      />
-      <small id="helpDateTime">help time and date</small>
-
-      <label for="mothLabl">Month</label>
-      <input type="month" value="" />
-
-      <label for="weekLabel">Week</label>
-      <input type="week" id="weekId" name="weekId" step="1" />
-
-      <hr />
-
-      <label id="fileUploadLabelId" for="fileLabel">File Upload</label>
-      <input
-        type="file"
-        id="fileuploadId"
-        name="fileuploadId"
-        class="formcontrol"
-        accept="image/*"
-        multiple
-      />
-
-      <hr />
-      <label for="rangeId">Volome</label>
-      <input
-        type="range"
-        id="rangeId"
-        name="rangeId"
-        class="formcontrol"
-        min="0"
-        max="100"
-        value="50"
-        step="5"
-      />
-
-      <hr />
-      <label for="colorLabel">Color</label>
-      <input
-        type="color"
-        id="colorLabel"
-        name="colorLabel"
-        class="formcontrol"
-        value="#fff000"
-      />
-
-      <hr />
-      <input
-        type="submit"
-        formaction="submit.php"
-        formenctype="application/x-www-form-urlencoded multipart/form-data text/plain"
-        formmethod="post"
-        formnovalidate
-        value="Sent Now"
-      />
-
-      <input type="reset" name="Reset Value" name="resetbtn" id="resetbtn" />
-      <input
-        type="button"
-        name="button"
-        value="Custom button"
-        name="resetbtn"
-        id="resetbtn"
-      />
-      <button type="button">Button</button>
-
-      <input
-        type="image"
-        id="imageId"
-        name="imageId"
-        class="formcontrol"
-        src="../../assets/images/animal.jpg"
-        width="100"
-        height="30"
-      />
-
-      <hr />
-      <input type="hidden" id="hiddenId" name="hiddenId" value="12123" />
+      <button type="submit">Save</button>
     </form>
+
+    <form oninput="total.value=price.value*qty.value">
+      <label>Price: <input type="number" id="price" value="" /></label><br />
+      <label>Qty: <input type="number" id="qty" value="" /></label><br />
+      Total: <output name="total" for="out"></output>
+    </form>
+
+    <label for="storage">Disk usage:</label>
+    <meter id="storage" value="4" min="0" max="10">60%</meter>
+
+    <label for="score">Performance Score:</label>
+    <meter
+      id="score"
+      value="99"
+      min="0"
+      max="100"
+      low="40"
+      high="60"
+      optimum="80"
+    >
+      75%
+    </meter>
+    <meter
+      id="score"
+      value="55"
+      min="0"
+      max="100"
+      low="40"
+      high="60"
+      optimum="80"
+    >
+      75%
+    </meter>
+    <meter
+      id="score"
+      value="20"
+      min="0"
+      max="100"
+      low="40"
+      high="60"
+      optimum="80"
+    >
+      75%
+    </meter>
+
+    <progress value="48" max="50">49%</progress>
   </body>
+
+  <script>
+    const city = document.getElementById('city');
+    // → ["apple", "mango"]
+
+    const form = document.getElementById('form');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // ✅ Correct: Declare formData before using it
+      const formData = new FormData(form);
+      const json = Object.fromEntries(formData.entries());
+
+      console.log(JSON.stringify(json, null, 2));
+
+      const selectedValues = Array.from(city.selectedOptions).map(
+        (opt) => opt.value,
+      );
+      console.log(selectedValues);
+    });
+  </script>
 </html>

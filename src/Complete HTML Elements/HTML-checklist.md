@@ -155,18 +155,18 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 |----|-------------|--------|------------------------|------------------------------------|
 | [x]| `<form>`     | Block  | Form                   | `action`, `method`, `enctype`      |
 | [x]| `<input>`    | Void   | Input field            | `type`, `name`, `placeholder`, `required` |
-| [ ]| `<textarea>` | Block  | Multi-line text input  | `rows`, `cols`, `placeholder`      |
-| [ ]| `<button>`   | Inline | Button                 | `type`, `disabled`                 |
-| [ ]| `<select>`   | Inline | Dropdown               | `name`, `multiple`                 |
-| [ ]| `<option>`   | Inline | Dropdown option        | `value`, `selected`                |
-| [ ]| `<optgroup>` | Inline | Option group           | `label`                            |
-| [ ]| `<label>`    | Inline | Label for input        | `for`                              |
-| [ ]| `<fieldset>` | Block  | Group controls         | `disabled`                         |
-| [ ]| `<legend>`   | Block  | Title for fieldset     | None                               |
-| [ ]| `<datalist>` | Block  | List of predefined options | None                           |
-| [ ]| `<output>`   | Inline | Display result         | `for`                              |
-| [ ]| `<meter>`    | Inline | Scalar measurement     | `min`, `max`, `value`              |
-| [ ]| `<progress>` | Inline | Progress indicator     | `max`, `value`                     |
+| [x]| `<textarea>` | Block  | Multi-line text input  | `rows`, `cols`, `placeholder`      |
+| [x]| `<button>`   | Inline | Button                 | `type`, `disabled`                 |
+| [x]| `<select>`   | Inline | Dropdown               | `name`, `multiple`                 |
+| [x]| `<option>`   | Inline | Dropdown option        | `value`, `selected`                |
+| [x]| `<optgroup>` | Inline | Option group           | `label`                            |
+| [x]| `<label>`    | Inline | Label for input        | `for`                              |
+| [x]| `<fieldset>` | Block  | Group controls         | `disabled`                         |
+| [x]| `<legend>`   | Block  | Title for fieldset     | None                               |
+| [x]| `<datalist>` | Block  | List of predefined options | None                           |
+| [x]| `<output>`   | Inline | Display result         | `for`                              |
+| [x]| `<meter>`    | Inline | Scalar measurement     | `min`, `max`, `value`              |
+| [x]| `<progress>` | Inline | Progress indicator     | `max`, `value`                     |
 
 
 ### 1. <form>
@@ -299,6 +299,72 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 |                  |                                       |                                                        |
 | ---------------- | ------------------------------------- |--------------------------------------------------------|
 ---
+
+### 3. <textarea>
+
+| Attribute      | Description                                                                 |
+| -------------- | --------------------------------------------------------------------------- |
+| `name`         | Name of the field (used when submitting form).                              |
+| `id`           | Used with `<label>` and JavaScript.                                         |
+| `rows`         | Number of visible text lines.                                               |
+| `cols`         | Width of the textarea (in character units).                                 |
+| `placeholder`  | Shows placeholder text inside the box.                                      |
+| `maxlength`    | Limits the number of characters.                                            |
+| `minlength`    | Sets the minimum number of characters.                                      |
+| `required`     | Field must be filled before form is submitted.                              |
+| `readonly`     | Prevents the user from editing the text.                                    |
+| `disabled`     | Grays out the field and makes it non-editable and non-submittable.          |
+| `wrap`         | Controls text wrapping: `soft`, `hard`, or `off`.                           |
+| `autofocus`    | Automatically focuses this field on page load.                              |
+| `spellcheck`   | Enable/disable spellchecking (`true` or `false`).                           |
+| `autocomplete` | Can be `"on"` or `"off"`. Allows browser to suggest previously typed input. |
+---
+
+### 4. <button>
+
+| `type`   | Description                                                          |
+| -------- | -------------------------------------------------------------------- |
+| `submit` | (default) Submits the form it's in.                                  |
+| `reset`  | Resets all form inputs to their default values.                      |
+| `button` | Does nothing by itself. Use this with JavaScript for custom actions. |
+---
+| Attribute        | Description                                                                |
+| ---------------- | -------------------------------------------------------------------------- |
+| `type`           | `"submit"` (default), `"reset"`, or `"button"`.                            |
+| `disabled`       | Disables the button (unclickable).                                         |
+| `name`           | Name for form submission.                                                  |
+| `value`          | Value sent to server with the name.                                        |
+| `form`           | Links the button to a form with a matching `id` (can be outside the form). |
+| `autofocus`      | Automatically focuses this button on page load.                            |
+| `formaction`     | URL to send the form data (only for `type="submit"`).                      |
+| `formenctype`    | MIME type for form submission (e.g., `multipart/form-data`).               |
+| `formmethod`     | HTTP method (`GET` or `POST`) for form submission.                         |
+| `formnovalidate` | Skips form validation when submitting.                                     |
+| `formtarget`     | Where to display the response (`_blank`, `_self`, etc.).                   |
+---
+
+### 5. <select>
+
+| Attribute   | Description                                           |
+| ----------- | ----------------------------------------------------- |
+| `name`      | Name of the form control (used in submission).        |
+| `id`        | ID for JavaScript or `<label for="">`.                |
+| `required`  | User must select an option before form submission.    |
+| `multiple`  | Allows multiple options to be selected.               |
+| `size`      | Shows how many options are visible without scrolling. |
+| `disabled`  | Disables the dropdown.                                |
+| `autofocus` | Focuses the field when the page loads.                |
+| `form`      | Links the `<select>` to a form element by ID.         |
+
+```
+<select name="language" required autofocus>
+  <option value="">-- Select Language --</option>
+  <option value="en">English</option>
+  <option value="hi">Hindi</option>
+  <option value="ml" disabled>Malayalam (Coming Soon)</option>
+</select>
+
+```
 
 ## 🕹️ Interactive Elements
 
