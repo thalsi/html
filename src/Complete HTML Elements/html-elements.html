@@ -16,6 +16,11 @@
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" />
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
   </header>
   <body>
     <form id="form">
@@ -111,9 +116,87 @@
     </meter>
 
     <progress value="48" max="50">49%</progress>
-  </body>
 
+    <details open>
+      <summary>Title of collabe</summary>
+      <p>open collage</p>
+    </details>
+
+    <dialog id="dialogId" open>
+      <p>This is dialog</p>
+      <button
+        type="button"
+        onclick="document.getElementById('dialogId').close()"
+      >
+        Close
+      </button>
+    </dialog>
+
+    <button
+      type="button"
+      onclick="document.getElementById('dialogId').showModal()"
+    >
+      open
+    </button>
+
+    <dialog id="modalDialog">Modal: blocks interaction</dialog>
+    <dialog id="nonModalDialog" style="top: 100px; left: 300px">
+      Non-modal: does not block
+    </dialog>
+
+    <button onclick="modalDialog.showModal()">Open Modal</button>
+    <button onclick="nonModalDialog.show()">Open Non-Modal</button>
+
+    <dialog id="formDialog">
+      <form method="dialog">
+        <p>
+          <label>Name: <input name="name" /></label>
+        </p>
+        <menu>
+          <button value="cancel">Cancel</button>
+          <button value="submit">Submit</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <button onclick="document.getElementById('formDialog').showModal()">
+      Open Form
+    </button>
+
+    <template id="myTemplate">
+      <div class="card">
+        <h3>Title</h3>
+        <p>Description goes here</p>
+      </div>
+    </template>
+
+    <my-button>Save</my-button>
+
+    <my-box>
+      <h1 slot="header">Hello</h1>
+      <h4>this is</h4>
+      <p>this is my box</p>
+    </my-box>
+
+    <p>
+      <abbr title="National Aeronautics and Space Administration">NASA</abbr>
+      launched a new satellite.
+    </p>
+  </body>
+  <script src="slot.js"></script>
   <script>
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot.innerHTML = `
+  <style>
+    button { background: red; color: white; }
+  </style>
+  <button>Save</button>
+`;
+
+    const temp = document.getElementById('myTemplate');
+    const clone = temp.content.cloneNode(true);
+    document.body.appendChild(clone);
+
     const city = document.getElementById('city');
     // → ["apple", "mango"]
 

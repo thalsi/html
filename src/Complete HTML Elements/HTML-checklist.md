@@ -174,7 +174,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | ✅ | Attribute        | Description                                                               | Example                         |
 |----| ---------------- | ------------------------------------------------------------------------- | ------------------------------- |
 | [x]| `action`         | URL where the form data will be submitted                                 | `action="/submit-form"`         |
-| [x]| `method`         | HTTP method to submit the form (`get` or `post`)                          | `method="post"`                 |
+| [x]| `method`         | HTTP method to submit the form (`get`,'dialog' or `post`)                          | `method="post"`                 |
 | [x]| `enctype`        | Encoding type for form data (used with `post` method)                     | `enctype="multipart/form-data"` |
 | [x]| `name`           | Name of the form (useful in JavaScript)                                   | `name="loginForm"`              |
 | [x]| `target`         | Specifies where to open the result (`_self`, `_blank`, `_parent`, `_top`) | `target="_blank"`               |
@@ -370,10 +370,10 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 | ✅ | Element     | Type   | Description              | Key Attributes |
 |----|------------|--------|--------------------------|----------------|
-| [ ]| `<details>`| Block  | Expandable widget        | `open`         |
-| [ ]| `<summary>`| Block  | Summary for `<details>` | None           |
-| [ ]| `<dialog>` | Block  | Modal dialog             | `open`         |
-| [ ]| `<menu>`   | Block  | Context menu (deprecated)| None           |
+| [x]| `<details>`| Block  | Expandable widget        | `open`         |
+| [x]| `<summary>`| Block  | Summary for `<details>` | None           |
+| [x]| `<dialog>` | Block  | Modal dialog             | `open`         |
+| [x]| `<menu>`   | Block  | Context menu (deprecated)| None           |
 
 ---
 
@@ -381,8 +381,8 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 | ✅ | Element      | Type        | Description                   | Key Attributes |
 |----|-------------|-------------|-------------------------------|----------------|
-| [ ]| `<template>` | Metadata    | Client-side template holder   | None           |
-| [ ]| `<slot>`     | Shadow DOM  | Placeholder in Shadow DOM     | `name`         |
+| [x]| `<template>` | Metadata    | Client-side template holder   | None           |
+| [x]| `<slot>`     | Shadow DOM  | Placeholder in Shadow DOM     | `name`         |
 
 ---
 
@@ -390,14 +390,14 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 | ✅ | Element       | Type       | Use Instead             |
 |----|--------------|------------|--------------------------|
-| [ ]| `<acronym>`   | Inline     | `<abbr>`                 |
-| [ ]| `<applet>`    | Block      | `<object>`               |
-| [ ]| `<big>`       | Inline     | CSS `font-size`          |
-| [ ]| `<center>`    | Block      | CSS `text-align`         |
-| [ ]| `<font>`      | Inline     | CSS styling              |
-| [ ]| `<frame>`     | Frame/Old  | `<iframe>` or avoid      |
-| [ ]| `<frameset>`  | Frame/Old  | CSS Layout               |
-| [ ]| `<marquee>`   | Inline     | CSS/JS animation         |
-| [ ]| `<nobr>`      | Inline     | CSS `white-space: nowrap`|
-| [ ]| `<strike>`    | Inline     | `<del>` or CSS           |
+| [x]| `<acronym>`   | Inline     | `<abbr>`                 |
+| [x]| `<applet>`    | Block      | `<object>`               |
+| [x]| `<big>`       | Inline     | CSS `font-size`          |
+| [x]| `<center>`    | Block      | CSS `text-align`         |
+| [x]| `<font>`      | Inline     | CSS styling              |
+| [x]| `<frame>`     | Frame/Old  | `<iframe>` or avoid      |
+| [x]| `<frameset>`  | Frame/Old  | CSS Layout               |
+| [x]| `<marquee>`   | Inline     | CSS/JS animation         |
+| [x]| `<nobr>`      | Inline     | CSS `white-space: nowrap`|
+| [x]| `<strike>`    | Inline     | `<del>` or CSS           |
 
