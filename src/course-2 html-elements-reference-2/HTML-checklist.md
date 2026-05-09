@@ -14,7 +14,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x]      | accesskey       | Keyboard shortcut to activate/focus the element. (ALT+H)                               |
 | [x]      | class           | Space-separated list of CSS classes.                                                   |
 | [X]      | contenteditable | Makes the element editable (`true`/`false`).(WYSIWYG editors, Real-time collaborativ ) |
-| [x]      | data-*          | Custom data attributes (e.g., `data-id="123"`).      |
+| [x]      | data-*          | Custom data attributes (e.g., `data-id="123"`).      | 
 | [x]      | dir             | Text direction (`ltr`, `rtl`, `auto`).               |
 | [x]      | draggable       | Whether the element can be dragged (`true`/`false`). |
 | [x]      | hidden          | Hides the element from rendering.                    |
@@ -26,6 +26,9 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x]      | title           | Tooltip text on hover.                               |
 | [x]      | translate       | Whether content should be translated (`yes`/`no`).(company name, book name, etc..)  |
 | [x]      | role & aria-*   | Accessibility attributes (`role`, `aria-*`).         |
+| [x]      | inert           | Makes element completely non-interactive                            |
+| [x]      | popover       | Native popover UI support  |
+| [x]      | exportparts   | Controls Shadow DOM styling exposure       |
 
 ---
 
@@ -60,6 +63,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x]| `<aside>`   | Block  | Sidebar or supplementary content         | None           |
 | [x]| `<h1>`–`<h6>`| Block | Headings (h1 = most important)           | None           |
 | [x]| `<address>` | Block  | Contact information                      | None           |
+| [x] | `<hgroup>` | Block | Groups heading and subheading |
 
 ---
 
@@ -108,6 +112,14 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x]| `<rt>`     | Inline | Ruby pronunciation               | None                      |
 | [x]| `<rp>`     | Inline | Fallback for ruby                | None                      |
 | [x]| `<wbr>`    | Void   | Line break opportunity           | None                      |
+| [x] | `<b>`    | Inline | Bold text (no importance meaning)  |
+| [x] | `<i>`    | Inline | Italic text (alternate voice/term) |
+| [x] | `<u>`    | Inline | Underlined text                    |
+| [x] | `<s>`    | Inline | No longer relevant text            |
+| [x] | `<q>`    | Inline | Short inline quotation             |
+| [x] | `<cite>` | Inline | Citation / reference source        |
+| [x] | `<dfn>`  | Inline | Definition term                    |
+| [x] | `<data>` | Inline | Machine-readable + human value     |
 
 ---
 
@@ -129,7 +141,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x]| `<figcaption>`| Block| Caption for `<figure>`    | None                                   |
 | [x]| `<canvas>` | Block  | Drawing surface            | `width`, `height`                      |
 | [x]| `<svg>`    | Inline | Scalable Vector Graphics   | SVG-specific                           |
-
+| [x]| `<map>`    | Block        | Client-side image map             | `name`, Global                                                                      |
 ---
 
 ## 📊 Tables
@@ -374,6 +386,8 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x]| `<summary>`| Block  | Summary for `<details>` | None           |
 | [x]| `<dialog>` | Block  | Modal dialog             | `open`         |
 | [x]| `<menu>`   | Block  | Context menu (deprecated)| None           |
+| [x] | `<menuitem>` | Inline | Deprecated command item    |
+| [x] | `<command>`  | Inline | Deprecated command element |
 
 ---
 
@@ -383,6 +397,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 |----|-------------|-------------|-------------------------------|----------------|
 | [x]| `<template>` | Metadata    | Client-side template holder   | None           |
 | [x]| `<slot>`     | Shadow DOM  | Placeholder in Shadow DOM     | `name`         |
+| [x] | `<portal>` | Block | Experimental page embedding |
 
 ---
 
@@ -401,3 +416,22 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x]| `<nobr>`      | Inline     | CSS `white-space: nowrap`|
 | [x]| `<strike>`    | Inline     | `<del>` or CSS           |
 
+##  Accessibility (ARIA Attributes)
+
+- [ ] role — Defines semantic role (button, dialog, etc.)
+- [ ] aria-label — Accessible name
+- [ ] aria-labelledby — Links to label element
+- [ ] aria-describedby — Links to description
+- [ ] aria-hidden — Hides from assistive tech
+- [ ] aria-expanded — State of expandable item
+- [ ] aria-pressed — State of toggle button
+- [ ] aria-checked — Checkbox/radio state
+- [ ] aria-selected — Selection state
+- [ ] aria-live — Dynamic content region (polite, assertive)
+- [ ] aria-busy — Marks element as loading
+- [ ] aria-controls — Identifies controlled element(s)
+- [ ] aria-current — Marks current item in a set
+- [ ] aria-modal           - Defines modal dialog behavior 
+- [ ] aria-orientation     - Defines layout direction     
+- [ ] aria-roledescription - Custom role label    
+- [ ] aria-dropeffect   - Drag/drop effect (legacy)     
