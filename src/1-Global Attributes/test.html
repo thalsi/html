@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    
+    
+    <input class="control formcontrol" type="text" accesskey="n">
+    <button accesskey="s">Save</button>
+
+    <a href="#" accesskey="p">Home link</a>
+
+    <div contenteditable="true">
+        This is the content Editable
+    </div>
+
+    <div id="user" data-user-id="1" data-user-name="jone-joe" data-user-age="24">
+        Jhon Joe
+    </div>
+
+    <p dir="ltr">Left to Right</p>
+    <p dir="rtl">Right to Left</p>
+
+    <div id="drag" draggable="true">
+        Drag..
+    </div>
+    <div id="drop">
+        Drop
+    </div>
+
+    <p hidden>Hide me</p>
+
+    <div tabindex="0">
+  Focus Me
+</div>
+
+<div tabindex="-1">
+  Hidden Focus
+</div>
+
+    <p lang="en">Hello</p>
+    <p lang="ml">നമസ്കാരം</p>
+
+    <textarea spellcheck="true"></textarea>
+
+
+    <div role="menu" aria-labelledby="title" aria-describedby="desp">
+          <h2 id="title">
+    Login
+  </h2>
+
+        <p id="desc">
+            Enter your account details
+        </p>
+    </div>
+
+<div inert>
+  <button>Save</button>
+  <input>
+  <a href="#">Link</a>
+</div>
+
+
+    <button popovertarget="user-modal">Open Small modal</button>
+    <div id="user-modal" popover>
+        User
+    </div>
+
+
+
+
+
+    <script src="test.js"></script>
+</body>
+</html>
