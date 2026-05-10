@@ -1,152 +1,557 @@
-# 📘 HTML Master Course (Beginner → Advanced)
 
-## 📑 Course Index
-| Module | Title                                   |
-| ------ | --------------------------------------- |
-| 1      | Introduction to HTML                    |
-| 2      | HTML Basics: Elements & Structure       |
-| 3      | Text & Formatting                       |
-| 4      | Lists & Links                           |
-| 5      | Multimedia (Images, Audio, Video)       |
-| 6      | Tables                                  |
-| 7      | Forms & Input Types                     |
-| 8      | Semantic HTML                           |
-| 9      | Global Attributes & Events              |
-| 10     | HTML5 APIs                              |
-| 11     | Advanced Media & Graphics (Canvas, SVG) |
-| 12     | Accessibility (A11y)                    |
-| 13     | SEO & Metadata                          |
-| 14     | Best Practices & Performance            |
-| 15     | Project Work & Real-World HTML          |
+# 📘 Complete HTML5 Elements Reference
 
-## ✅ Module 1 — Introduction to HTML
+All standard HTML elements, grouped by category with attributes and usage notes. Includes:
+- ✅ Checklist
+- Element Type (Block, Inline, Void, etc.)
 
-- [ ] 1.1 What is HTML?
-- [ ] 1.2 History & Versions of HTML (HTML, XHTML, HTML5)
-- [ ] 1.3 How Browsers Read HTML (DOM basics)
-- [ ] 1.4 Setting up First HTML Document (<!DOCTYPE html>)
-- [ ] 1.5 Structure of an HTML Page (<html>, <head>, <body>)
-- [ ] 1.6 Role of HTML, CSS, JavaScript
+---
+## 🌍 1. Global Attributes (Applied to most elements)
+
+| ✅ Check | Attribute         | Description                                                                 |
+|----------|------------------|-----------------------------------------------------------------------------|
+| [x]      | `accesskey`      | Keyboard shortcut to activate/focus the element.                           |
+| [x]      | `class`          | Space-separated list of CSS classes.                                       |
+| [x]      | `contenteditable`| Makes the element editable (`true` / `false`).                             |
+| [x]      | `data-*`         | Custom data attributes (e.g., `data-id="123"`).                            |
+| [x]      | `dir`            | Text direction (`ltr`, `rtl`, `auto`).                                     |
+| [x]      | `draggable`      | Whether the element can be dragged (`true` / `false`).                     |
+| [x]      | `hidden`         | Hides the element from rendering.                                          |
+| [x]      | `id`             | Unique identifier for the element.                                         |
+| [x]      | `lang`           | Language of the element content (e.g., `en`, `ml`, `es`).                  |
+| [x]      | `spellcheck`     | Enables spell-checking (`true` / `false`).                                 |
+| [x]      | `style`          | Inline CSS styles.                                                         |
+| [x]      | `tabindex`       | Controls keyboard tab order (`0`, `-1`, etc.).                             |
+| [x]      | `title`          | Tooltip/advisory text shown on hover.                                      |
+| [x]      | `translate`      | Whether content should be translated (`yes` / `no`).                       |
+| [x]      | `role` & `aria-*`| Accessibility attributes for assistive technologies.                       |
+| [x]      | `inert`          | Makes subtree completely non-interactive.                                  |
+| [x]      | `popover`        | Native popover UI support.                                                 |
+| [x]      | `exportparts`    | Exposes Shadow DOM parts for external styling.                             |
+---
+
+## 📑 Document Structure
+
+| ✅ | Element       | Type      | Description                          | Key Attributes              |
+|----|--------------|-----------|--------------------------------------|-----------------------------|
+| [x]| `<!DOCTYPE>` | Declaration | Declares HTML5 document type        | None                        |
+| [x]| `<html>`     | Root       | Root element                         | `lang`, `manifest`          |
+| [x]| `<head>`     | Metadata   | Contains metadata                    | None                        |
+| [x]| `<title>`    | Metadata   | Page title in browser tab            | None                        |
+| [x]| `<base>`     | Metadata   | Base URL for relative links          | `href`, `target`            |
+| [x]| `<meta>`     | Metadata   | Metadata for page                    | `charset`, `name`, `content`|
+| [x]| `<link>`     | Metadata   | Links to external resources          | `rel`, `href`, `type`       |
+| [x]| `<style>`    | Metadata   | Internal CSS                         | `type`, `media`             |
+| [x]| `<script>`   | Metadata   | JavaScript                           | `src`, `async`, `defer`     |
+| [x]| `<noscript>` | Block      | Fallback if JS disabled              | None                        |
+| [x]| `<body>`     | Block      | Document body                        | None                        |
+
+---
+
+## 📑 Content Sectioning
+
+| ✅ | Element       | Type   | Description                    | Key Attributes |
+|----|--------------|--------|--------------------------------|----------------|
+| [x] | `<header>`  | Block  | Introductory content           | None           |
+| [x] | `<footer>`  | Block  | Footer content                 | None           |
+| [x] | `<nav>`     | Block  | Navigation links               | None           |
+| [x] | `<main>`    | Block  | Main content of page           | None           |
+| [x] | `<article>` | Block  | Self-contained composition     | None           |
+| [x] | `<section>` | Block  | Thematic grouping of content   | None           |
+| [x] | `<aside>`   | Block  | Sidebar/supplementary content  | None           |
+| [x] | `<h1>`      | Block  | Level 1 heading                | None           |
+| [x] | `<h2>`      | Block  | Level 2 heading                | None           |
+| [x] | `<h3>`      | Block  | Level 3 heading                | None           |
+| [x] | `<h4>`      | Block  | Level 4 heading                | None           |
+| [x] | `<h5>`      | Block  | Level 5 heading                | None           |
+| [x] | `<h6>`      | Block  | Level 6 heading                | None           |
+| [x] | `<address>` | Block  | Contact information            | None           |
+| [x] | `<hgroup>`  | Block  | Groups heading/subheading      | None           |
+---
+
+## 📝 Text Content & Semantics
+
+| ✅ | Element        | Type   | Description                         | Key Attributes              |
+|----|---------------|--------|-------------------------------------|-----------------------------|
+| [x]| `<p>`         | Block  | Paragraph                           | None                        |
+| [x]| `<br>`        | Void   | Line break                          | None                        |
+| [x]| `<hr>`        | Void   | Thematic break                      | None                        |
+| [x]| `<pre>`       | Block  | Preformatted text                   | None                        |
+| [x]| `<blockquote>`| Block  | Long quotation                      | `cite`                      |
+| [x]| `<ol>`        | Block  | Ordered list                        | `type`, `start`, `reversed` |
+| [x]| `<ul>`        | Block  | Unordered list                      | None                        |
+| [x]| `<li>`        | Block  | List item                           | `value`                     |
+| [x]| `<dl>`        | Block  | Description list                    | None                        |
+| [x]| `<dt>`        | Block  | Term in description list            | None                        |
+| [x]| `<dd>`        | Block  | Description/definition              | None                        |
+| [x]| `<div>`       | Block  | Generic container                   | None                        |
+| [x]| `<span>`      | Inline | Generic inline container            | None                        |
+| [x]| `<div>`      | Block |Generic block container.         | None                        |
+
+---
+
+## ✏️ Inline Text Semantics
+
+| ✅ | Element     | Type   | Description                                | Key Attributes            |
+|----|-------------|--------|--------------------------------------------|---------------------------|
+| [x] | `<a>`      | Inline | Hyperlink                                  | `href`, `target`, `rel`   |
+| [x] | `<strong>` | Inline | Important text (bold)                      | None                      |
+| [x] | `<em>`     | Inline | Emphasized text (italic)                   | None                      |
+| [x] | `<mark>`   | Inline | Highlighted text                           | None                      |
+| [x] | `<small>`  | Inline | Side comments or fine print                | None                      |
+| [x] | `<del>`    | Inline | Deleted/removed text                       | `cite`, `datetime`        |
+| [x] | `<ins>`    | Inline | Inserted text                              | `cite`, `datetime`        |
+| [x] | `<sub>`    | Inline | Subscript                                  | None                      |
+| [x] | `<sup>`    | Inline | Superscript                                | None                      |
+| [x] | `<code>`   | Inline | Inline code                                | None                      |
+| [x] | `<kbd>`    | Inline | Keyboard input                             | None                      |
+| [x] | `<samp>`   | Inline | Sample output                              | None                      |
+| [x] | `<var>`    | Inline | Variable (programming or math)             | None                      |
+| [x] | `<abbr>`   | Inline | Abbreviation                               | `title`                   |
+| [x] | `<time>`   | Inline | Time/date with machine-readability         | `datetime`                |
+| [x] | `<bdi>`    | Inline | Isolate bidirectional text                 | None                      |
+| [x] | `<bdo>`    | Inline | Override text direction                    | `dir`                     |
+| [x] | `<ruby>`   | Inline | Ruby annotation container                  | None                      |
+| [x] | `<rt>`     | Inline | Ruby text pronunciation                    | None                      |
+| [x] | `<rp>`     | Inline | Fallback parentheses for ruby              | None                      |
+| [x] | `<wbr>`    | Void   | Line break opportunity                     | None                      |
+| [x] | `<b>`      | Inline | Bold text (no importance meaning)          | None                      |
+| [x] | `<i>`      | Inline | Italic text (alternate voice/term)         | None                      |
+| [x] | `<u>`      | Inline | Underlined text                            | None                      |
+| [x] | `<s>`      | Inline | No longer accurate/relevant text           | None                      |
+| [x] | `<q>`      | Inline | Short inline quotation                     | `cite`                    |
+| [x] | `<cite>`   | Inline | Citation / reference source                | None                      |
+| [x] | `<dfn>`    | Inline | Definition term                            | None                      |
+| [x] | `<data>`   | Inline | Machine-readable value                     | `value`                   |
+
+---
+
+## 🖼️ Media & Embedded Content
+
+| ✅ | Element        | Type   | Description                              | Key Attributes                                      |
+|----|----------------|--------|------------------------------------------|-----------------------------------------------------|
+| [x] | `<img>`        | Void   | Image                                    | `src`, `alt`, `width`, `height`, `loading`          |
+| [x] | `<picture>`    | Block  | Responsive image container               | None                                                |
+| [x] | `<source>`     | Void   | Source for media                         | `src`, `type`                                       |
+| [x] | `<map>`        | Block  | Client-side image map                    | `name`                                              |
+| [x] | `<area>`       | Void   | Clickable area inside image map          | `shape`, `coords`, `href`, `alt`                    |
+| [x] | `<audio>`      | Block  | Audio player                             | `src`, `controls`, `loop`, `muted`                  |
+| [x] | `<video>`      | Block  | Video player                             | `src`, `controls`, `poster`                         |
+| [x] | `<track>`      | Void   | Subtitles/captions                       | `kind`, `src`, `srclang`                            |
+| [x] | `<embed>`      | Void   | External embedded content                | `src`, `type`                                       |
+| [x] | `<object>`     | Block  | Embedded external resource               | `data`, `type`                                      |
+| [x] | `<param>`      | Void   | Parameters for `<object>`                | `name`, `value`                                     |
+| [x] | `<iframe>`     | Block  | Embedded page/frame                      | `src`, `width`, `height`, `sandbox`, `referrerpolicy` |
+| [x] | `<figure>`     | Block  | Self-contained media/content container   | None                                                |
+| [x] | `<figcaption>` | Block  | Caption for `<figure>`                   | None                                                |
+| [x] | `<canvas>`     | Block  | Drawing surface for graphics             | `width`, `height`                                   |
+| [x] | `<svg>`        | Inline | Scalable Vector Graphics container       | SVG-specific                                        |
+| [x] | `<math>`       | Inline | MathML for mathematical notation         | MathML-specific                                     |
+---
+
+## 📊 Tables
+
+| ✅ | Element      | Type   | Description             | Key Attributes            |
+|----|-------------|--------|-------------------------|---------------------------|
+| [x]| `<table>`    | Block  | Table container         | None                      |
+| [x]| `<caption>`  | Block  | Table title             | None                      |
+| [x]| `<thead>`    | Block  | Table header            | None                      |
+| [x]| `<tbody>`    | Block  | Table body              | None                      |
+| [x]| `<tfoot>`    | Block  | Table footer            | None                      |
+| [x]| `<tr>`       | Block  | Table row               | None                      |
+| [x]| `<td>`       | Block  | Table cell              | `colspan`, `rowspan`      |
+| [x]| `<th>`       | Block  | Header cell             | `colspan`, `rowspan`, `scope` |
+| [x]| `<col>`      | Void   | Column definition       | `span`                    |
+| [x]| `<colgroup>` | Block  | Group of columns        | `span`                    |
+
+---
+
+## 📝 Forms & Input
+
+| ✅ | Element      | Type   | Description            | Key Attributes                     |
+|----|-------------|--------|------------------------|------------------------------------|
+| [x]| `<form>`     | Block  | Form                   | `action`, `method`, `enctype`      |
+| [x]| `<input>`    | Void   | Input field            | `type`, `name`, `placeholder`, `required` |
+| [x]| `<textarea>` | Block  | Multi-line text input  | `rows`, `cols`, `placeholder`      |
+| [x]| `<button>`   | Inline | Button                 | `type`, `disabled`                 |
+| [x]| `<select>`   | Inline | Dropdown               | `name`, `multiple`                 |
+| [x]| `<option>`   | Inline | Dropdown option        | `value`, `selected`                |
+| [x]| `<optgroup>` | Inline | Option group           | `label`                            |
+| [x]| `<label>`    | Inline | Label for input        | `for`                              |
+| [x]| `<fieldset>` | Block  | Group controls         | `disabled`                         |
+| [x]| `<legend>`   | Block  | Title for fieldset     | None                               |
+| [x]| `<datalist>` | Block  | List of predefined options | None                           |
+| [x]| `<output>`   | Inline | Display result         | `for`                              |
+| [x]| `<meter>`    | Inline | Scalar measurement     | `min`, `max`, `value`              |
+| [x]| `<progress>` | Inline | Progress indicator     | `max`, `value`                     |
 
 
-## ✅ Module 2 — HTML Basics: Elements & Structure
+### 1. <form>
 
-- [ ] 2.1 Elements, Tags, Attributes
-- [ ] 2.2 Block vs Inline Elements
-- [ ] 2.3 Nesting Rules & Proper Indentation
-- [ ] 2.4 Empty (Void) Elements (<br>, <hr>, <img>)
-- [ ] 2.5 Comments in HTML (<!-- comment -->)
-- [ ] 2.6 File paths & Linking external resources
+| ✅ | Attribute        | Description                                                               | Example                         |
+|----| ---------------- | ------------------------------------------------------------------------- | ------------------------------- |
+| [x]| `action`         | URL where the form data will be submitted                                 | `action="/submit-form"`         |
+| [x]| `method`         | HTTP method to submit the form (`get`,'dialog' or `post`)                          | `method="post"`                 |
+| [x]| `enctype`        | Encoding type for form data (used with `post` method)                     | `enctype="multipart/form-data"` |
+| [x]| `name`           | Name of the form (useful in JavaScript)                                   | `name="loginForm"`              |
+| [x]| `target`         | Specifies where to open the result (`_self`, `_blank`, `_parent`, `_top`) | `target="_blank"`               |
+| [x]| `autocomplete`   | Turns autocomplete on/off for form fields                                 | `autocomplete="on"`             |
+| [x]| `novalidate`     | Disables native browser validation for the form                           | `novalidate`                    |
+| [x]| `rel`            | Specifies relationship (useful with `target="_blank"`)                    | `rel="noopener noreferrer"`     |
+| [x]| `accept-charset` | Character encodings the server can handle                                 | `accept-charset="UTF-8"`        |
+---
 
-## ✅ Module 3 — Text & Formatting
+### 2. <input> 
+ 
+|  Input Type      | Description                           |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`text`       | Single-line text (e.g. name, address) | `type`, `name`, `id`, `class`, `value`, `placeholder`  |
+|                  |                                       | `required`, `readonly`, `disabled`, `maxlength`,`size` |
+|                  |                                       | `minlength`, `autocomplete`, `autofocus`, `pattern`    |
+|                  |                                       | `form`, `title`, `spellcheck`, `inputmode`, `list`     |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`password`   | Hidden input for passwords            |  Same as `text`                                        |
+|                  |                                       |  plus: `pattern`                                       |
+|                  |                                       | `autocomplete="current-password"` or `"new-password"`  |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`email`      | Validated email entry                 |  Same as `text`                                        |
+|                  |                                       |  plus: `multiple`, `inputmode="email"`,                |
+|                  |                                       |  `autocomplete="email"`, `pattern`                     |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`number`     | Only numeric input                    | `type`, `name`, `id`, `class`, `value`, `min`, `max`,  |
+|                  |                                       | `step`, `placeholder`, `required`, `readonly`, `title` |
+|                  |                                       | `disabled`, `autocomplete`, `inputmode="numeric"`,     |
+|                  |                                       | `form`                                                 |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`tel`        | Telephone input                       |  Same as `text`,                                       |
+|                  |                                       |  plus: `pattern`, `autocomplete="tel"`,                |
+|                  |                                       | `inputmode="tel"`                                      |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`url`        | Website or link entry                 |  Same as `text`,                                       |
+|                  |                                       |  plus: `pattern`, `autocomplete="url"`                 |
+|                  |                                       | `inputmode="url"`                                      |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`search`     | Search bar (clearable by browser)     |  Same as `text`                                        |
+|                  |                                       |  plus: `autocomplete`, `list`, `placeholder`           |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`checkbox`   | Boolean or multiple-choice toggle     | `type`, `name`, `id`, `class`                          |
+|                  |                                       | `value`, `checked`, `required`, `disabled`             |
+|                  |                                       | `autofocus`, `form`, `title`                           |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`radio`      | Select one option from a group        |  Same as `checkbox`                                    |
+|                  |                                       | (must share the same `name` with other radios in group)|
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`date`       | Select a calendar date                | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
+|                  |                                       | `required`, `disabled`, `readonly`, `autocomplete`,    |
+|                  |                                       | `form`, `autofocus`, `title`, `inputmode`, `step`      |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`time`       | Select a time value                   |  Same as `date`                                        |
+|                  |                                       |  plus: `step` (e.g., seconds interval)                 |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`datetime-local`| Select date and time (no timezone) |  Same as `date`                                        |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`month`      | Select month & year                   |  Same as `date`                                        |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`week`       | Select week & year                    |  Same as `date`                                        |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`file`       | Upload files                          | `type`, `name`, `id`, `class`, `accept`,               |
+|                  |                                       | `multiple`, `required`, `disabled`,                    |
+|                  |                                       | `form`, `capture`, `title`                             |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`range`      | Slider for numeric value              | `type`, `name`, `id`, `class`, `value`, `min`, `max`   |
+|                  |                                       | `step`, `required`, `disabled`, `autofocus`, `form`,   |
+|                  |                                       | `title`                                                |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`color`      | Pick a color using browser UI         | `type`, `name`, `id`, `class`, `value`                 |
+|                  |                                       | `required`, `disabled`, `readonly`                     |
+|                  |                                       | `autofocus`, `form`, `title`                           |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`submit`     | Submit a form                         | `type`, `name`, `id`, `class`, `value`                 |
+|                  |                                       | `form`, `formaction`, `formenctype`, `formmethod`      |
+|                  |                                       | `formtarget`, `formnovalidate`, `title`                |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`reset`      | Reset form to original values         | `type`, `name`, `id`, `class`                          |
+|                  |                                       | `value`, `form`, `title`                               |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`button`     | Custom button (used with JavaScript)  | `type`, `name`, `id`, `class`                          |
+|                  |                                       | `value`, `onclick`, `form`, `title`                    |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`image`      | Submit button with an image           | `type`, `name`, `id`, `class`, `value`                 |
+|                  |                                       | `form`, `src`, `alt`, `width`, `height`, `formaction`  |
+|                  |                                       | `formenctype`, `formmethod`, `formtarget`,             |
+|                  |                                       | `formnovalidate`, `title`                              |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+|  [x]`hidden`     | Hidden form field (backend data)      | `type`, `name`, `id`, `class`,                         |
+|                  |                                       | `value`, `form`                                        |
+|                  |                                       |                                                        |
+|                  |                                       |                                                        |
+| ---------------- | ------------------------------------- |--------------------------------------------------------|
+---
 
-- [ ] 3.1 Headings (<h1>–<h6>)
-- [ ] 3.2 Paragraphs (<p>)
-- [ ] 3.3 Text Formatting (<b>, <i>, <u>, <strong>, <em>, <mark>, <small>)
-- [ ] 3.4 Quotations (<blockquote>, <q>, <cite>)
-- [ ] 3.5 Code & Preformatted Text (<code>, <pre>, <kbd>, <samp>, <var>)
-- [ ] 3.6 Superscript & Subscript (<sup>, <sub>)
-- [ ] 3.7 Line Breaks & Horizontal Rules
+### 3. <textarea>
 
-## ✅ Module 4 — Lists & Links
+| Attribute      | Description                                                                 |
+| -------------- | --------------------------------------------------------------------------- |
+| `name`         | Name of the field (used when submitting form).                              |
+| `id`           | Used with `<label>` and JavaScript.                                         |
+| `rows`         | Number of visible text lines.                                               |
+| `cols`         | Width of the textarea (in character units).                                 |
+| `placeholder`  | Shows placeholder text inside the box.                                      |
+| `maxlength`    | Limits the number of characters.                                            |
+| `minlength`    | Sets the minimum number of characters.                                      |
+| `required`     | Field must be filled before form is submitted.                              |
+| `readonly`     | Prevents the user from editing the text.                                    |
+| `disabled`     | Grays out the field and makes it non-editable and non-submittable.          |
+| `wrap`         | Controls text wrapping: `soft`, `hard`, or `off`.                           |
+| `autofocus`    | Automatically focuses this field on page load.                              |
+| `spellcheck`   | Enable/disable spellchecking (`true` or `false`).                           |
+| `autocomplete` | Can be `"on"` or `"off"`. Allows browser to suggest previously typed input. |
+---
 
-- [ ] 4.1 Ordered Lists (<ol>, <li>)
-- [ ] 4.2 Unordered Lists (<ul>, <li>)
-- [ ] 4.3 Definition Lists (<dl>, <dt>, <dd>)
-- [ ] 4.4 Links & Navigation (<a>)
-- [ ] 4.5 Relative vs Absolute URLs
-- [ ] 4.6 Linking to Sections with IDs
-- [ ] 4.7 Email & Phone Links
+### 4. <button>
 
-## ✅ Module 5 — Multimedia (Images, Audio, Video)
+| `type`   | Description                                                          |
+| -------- | -------------------------------------------------------------------- |
+| `submit` | (default) Submits the form it's in.                                  |
+| `reset`  | Resets all form inputs to their default values.                      |
+| `button` | Does nothing by itself. Use this with JavaScript for custom actions. |
+---
+| Attribute        | Description                                                                |
+| ---------------- | -------------------------------------------------------------------------- |
+| `type`           | `"submit"` (default), `"reset"`, or `"button"`.                            |
+| `disabled`       | Disables the button (unclickable).                                         |
+| `name`           | Name for form submission.                                                  |
+| `value`          | Value sent to server with the name.                                        |
+| `form`           | Links the button to a form with a matching `id` (can be outside the form). |
+| `autofocus`      | Automatically focuses this button on page load.                            |
+| `formaction`     | URL to send the form data (only for `type="submit"`).                      |
+| `formenctype`    | MIME type for form submission (e.g., `multipart/form-data`).               |
+| `formmethod`     | HTTP method (`GET` or `POST`) for form submission.                         |
+| `formnovalidate` | Skips form validation when submitting.                                     |
+| `formtarget`     | Where to display the response (`_blank`, `_self`, etc.).                   |
+---
 
-- [ ] 5.1 Images (<img>, alt, srcset)
-- [ ] 5.2 Image Formats (JPG, PNG, SVG, WebP, AVIF)
-- [ ] 5.3 Background Images vs <img>
-- [ ] 5.4 Audio (<audio> + controls)
-- [ ] 5.5 Video (<video> + controls, autoplay, loop)
-- [ ] 5.6 Embedding External Media (YouTube, iframe)
+### 5. <select>
 
-## ✅ Module 6 — Tables
+| Attribute   | Description                                           |
+| ----------- | ----------------------------------------------------- |
+| `name`      | Name of the form control (used in submission).        |
+| `id`        | ID for JavaScript or `<label for="">`.                |
+| `required`  | User must select an option before form submission.    |
+| `multiple`  | Allows multiple options to be selected.               |
+| `size`      | Shows how many options are visible without scrolling. |
+| `disabled`  | Disables the dropdown.                                |
+| `autofocus` | Focuses the field when the page loads.                |
+| `form`      | Links the `<select>` to a form element by ID.         |
 
-- [ ] 6.1 Basic Table (<table>, <tr>, <td>, <th>)
-- [ ] 6.2 Table Head, Body, Footer (<thead>, <tbody>, <tfoot>)
-- [ ] 6.3 Table Caption & Summary
-- [ ] 6.4 Colspan & Rowspan
-- [ ] 6.5 Styling Tables (borders, striping, responsiveness)
+```
+<select name="language" required autofocus>
+  <option value="">-- Select Language --</option>
+  <option value="en">English</option>
+  <option value="hi">Hindi</option>
+  <option value="ml" disabled>Malayalam (Coming Soon)</option>
+</select>
 
-## ✅ Module 7 — Forms & Input Types
+```
+## 🕹️ Interactive Elements
 
-- [ ] 7.1 <form> element & attributes (action, method, enctype)
-- [ ] 7.2 Input Basics (<input type="text">, placeholder, required)
-- [ ] 7.3 Advanced Input Types (email, url, number, date, color, range, file)
-- [ ] 7.4 <textarea>, <select>, <option>, <optgroup>
-- [ ] 7.5 Buttons (<button>, input buttons)
-- [ ] 7.6 Fieldset & Legend (<fieldset>, <legend>)
-- [ ] 7.7 Labels & Accessibility (<label for>)
-- [ ] 7.8 Form Validation (HTML5 built-in validation)
+| ✅ | Element        | Type   | Description                         | Key Attributes |
+|----|----------------|--------|-------------------------------------|----------------|
+| [x] | `<details>`   | Block  | Expandable disclosure widget        | `open`         |
+| [x] | `<summary>`   | Block  | Summary/title for `<details>`       | None           |
+| [x] | `<dialog>`    | Block  | Modal or popup dialog               | `open`         |
+| [x] | `<menu>`      | Block  | Menu list (deprecated)              | None           |
+| [x] | `<menuitem>` | Inline | Menu command item (deprecated)      | `type`, `label`, `icon` |
+| [x] | `<command>`  | Inline | Command button element (deprecated) | `type`, `label`, `icon` |
+---
 
-## ✅ Module 8 — Semantic HTML
+## ⚙️ Web Components
 
-- [ ] 8.1 What is Semantic HTML & Why It Matters
-- [ ] 8.2 Structural Tags (<header>, <nav>, <main>, <section>, <article>, <aside>, <footer>)
-- [ ] 8.3 Text Semantics (<time>, <address>, <abbr>, <dfn>, <meter>, <progress>)
-- [ ] 8.4 SEO & Accessibility benefits of semantic HTML
+| ✅ | Element      | Type        | Description                   | Key Attributes |
+|----|-------------|-------------|-------------------------------|----------------|
+| [x]| `<template>` | Metadata    | Client-side template holder   | None           |
+| [x]| `<slot>`     | Shadow DOM  | Placeholder in Shadow DOM     | `name`         |
+| [x] | `<portal>` | Block | Experimental page embedding |
 
-## ✅ Module 9 — Global Attributes & Events
+---
+## 🧯 Deprecated / Obsolete Elements
 
-- [ ] 9.1 id, class, title
-- [ ] 9.2 style, hidden, tabindex
-- [ ] 9.3 data-* attributes
-- [ ] 9.4 Event attributes (onclick, onchange, oninput, etc.)
-- [ ] 9.5 ARIA attributes for accessibility
+| ✅ | Element        | Type      | Description                               | Use Instead                    |
+|----|----------------|-----------|-------------------------------------------|--------------------------------|
+| [x] | `<acronym>`   | Inline    | Old acronym abbreviation element          | `<abbr>`                       |
+| [x] | `<applet>`    | Block     | Java applet embedding                     | `<object>` or modern APIs      |
+| [x] | `<big>`       | Inline    | Enlarged text                             | CSS `font-size`                |
+| [x] | `<center>`    | Block     | Center-aligned content                    | CSS `text-align` / Flexbox     |
+| [x] | `<font>`      | Inline    | Font styling element                      | CSS styling                    |
+| [x] | `<frame>`     | Legacy    | Frame inside `<frameset>`                 | `<iframe>` or modern layouts   |
+| [x] | `<frameset>`  | Legacy    | Old multi-frame page layout               | CSS Grid / Flexbox             |
+| [x] | `<marquee>`   | Inline    | Scrolling text/animation                  | CSS/JS animation               |
+| [x] | `<nobr>`      | Inline    | Prevent line breaks                       | CSS `white-space: nowrap`      |
+| [x] | `<strike>`    | Inline    | Strikethrough text                        | `<del>` or CSS `text-decoration` |
 
-## ✅ Module 10 — HTML5 APIs
+---
 
-- [ ] 10.1 Geolocation API
-- [ ] 10.2 Drag & Drop API
-- [ ] 10.3 Local Storage & Session Storage
-- [ ] 10.4 Web Workers
-- [ ] 10.5 Offline & Cache Manifest (Service Workers)
+## 🚀 Modern HTML Additions
 
-## ✅ Module 11 — Advanced Media & Graphics
+| ✅ | Feature / Attribute | Used With        | Description                                      | Example |
+|----|---------------------|------------------|--------------------------------------------------|---------|
+| [x] | `loading="lazy"`   | `<img>`, `<iframe>` | Defers loading until element is near viewport | `<img loading="lazy">` |
+| [x] | `decoding="async"` | `<img>`          | Allows asynchronous image decoding               | `<img decoding="async">` |
+| [x] | `fetchpriority`    | `<img>`, `<link>` | Controls resource loading priority             | `<img fetchpriority="high">` |
+| [x] | `popover`          | Global Attribute | Native popover/dropdown UI support               | `<div popover>` |
+| [x] | `inert`            | Global Attribute | Makes subtree completely non-interactive         | `<div inert>` |
+| [x] | `exportparts`      | Shadow DOM       | Exposes Shadow DOM parts for styling             | `<my-card exportparts="title">` |
+| [x] | `part`             | Shadow DOM       | Identifies stylable Shadow DOM part              | `<div part="header">` |
+| [x] | `inputmode`        | `<input>`        | Optimizes virtual keyboard type on mobile        | `<input inputmode="numeric">` |
+| [x] | `enterkeyhint`     | `<input>`        | Customizes mobile keyboard enter key label       | `<input enterkeyhint="search">` |
+| [x] | `autocomplete`     | Form Elements    | Browser autofill hints                           | `<input autocomplete="email">` |
+| [x] | `referrerpolicy`   | `<img>`, `<iframe>`, `<a>` | Controls referrer information sent     | `<img referrerpolicy="no-referrer">` |
+| [x] | `sandbox`          | `<iframe>`       | Restricts embedded iframe capabilities           | `<iframe sandbox>` |
+---
+## ♿ Accessibility (ARIA Attributes)
 
-- [ ] 11.1 Canvas API (<canvas>)
-- [ ] 11.2 Drawing Shapes & Text
-- [ ] 11.3 Animations in Canvas
-- [ ] 11.4 SVG Basics (<svg>, <path>, <circle>, <rect>)
-- [ ] 11.5 Inline vs External SVG
-- [ ] 11.6 SMIL Animations & CSS/SVG Integration
+| ✅ | Attribute              | Description                                           | Common Values / Example              |
+|----|------------------------|-------------------------------------------------------|--------------------------------------|
+| [x] | `role`                | Defines semantic role                                | `button`, `dialog`, `navigation`     |
+| [x] | `aria-label`          | Accessible name for element                          | `aria-label="Close Menu"`            |
+| [x] | `aria-labelledby`     | References element that labels current element       | `aria-labelledby="title-id"`         |
+| [x] | `aria-describedby`    | References descriptive element                       | `aria-describedby="desc-id"`         |
+| [x] | `aria-hidden`         | Hides element from assistive technologies            | `true`, `false`                      |
+| [x] | `aria-expanded`       | State of expandable/collapsible item                 | `true`, `false`                      |
+| [x] | `aria-pressed`        | State of toggle button                               | `true`, `false`, `mixed`             |
+| [x] | `aria-checked`        | Checkbox/radio checked state                         | `true`, `false`, `mixed`             |
+| [x] | `aria-selected`       | Indicates selected item                              | `true`, `false`                      |
+| [x] | `aria-live`           | Dynamic live region announcement                     | `polite`, `assertive`, `off`         |
+| [x] | `aria-busy`           | Indicates element is updating/loading                | `true`, `false`                      |
+| [x] | `aria-controls`       | Identifies controlled element(s)                     | `aria-controls="menu-panel"`         |
+| [x] | `aria-current`        | Marks current item in a set                          | `page`, `step`, `location`, `true`   |
+| [x] | `aria-modal`          | Defines modal dialog behavior                        | `true`, `false`                      |
+| [x] | `aria-orientation`    | Defines layout direction                             | `horizontal`, `vertical`             |
+| [x] | `aria-roledescription`| Human-readable custom role description               | `aria-roledescription="carousel"`    |
+| [x] | `aria-dropeffect`     | Drag/drop effect (legacy/deprecated)                 | `copy`, `move`, `link`               |
 
-## ✅ Module 12 — Accessibility (A11y)
+# 🚀 Suggested Next Sections
 
-- [ ] 12.1 What is Accessibility (WCAG, ARIA)
-- [ ] 12.2 Semantic HTML for Accessibility
-- [ ] 12.3 ARIA Roles, States & Properties
-- [ ] 12.4 Keyboard Navigation & Focus Management
-- [ ] 12.5 Screen Readers & Testing Tools
 
-## ✅ Module 13 — SEO & Metadata
+## 📂 HTML Content Categories
 
-- [ ] 13.1 Meta Tags (<meta>)
-- [ ] 13.2 Open Graph & Twitter Cards
-- [ ] 13.3 Structured Data (Schema.org)
-- [ ] 13.4 Title & Description Best Practices
-- [ ] 13.5 Linking Resources (favicon, manifest.json)
+- [ ] Metadata Content
+- [ ] Flow Content
+- [ ] Sectioning Content
+- [ ] Heading Content
+- [ ] Phrasing Content
+- [ ] Embedded Content
+- [ ] Interactive Content
+- [ ] Form-associated Content
+- [ ] Palpable Content
+- [ ] Script-supporting Content
 
-## ✅ Module 14 — Best Practices & Performance
+## ⚡ Event Handler Attributes
 
-- [ ] 14.1 Clean & Maintainable Code (indentation, comments, naming)
-- [ ] 14.2 Responsive HTML Structure (mobile-first)
-- [ ] 14.3 Image Optimization & Lazy Loading (loading="lazy")
-- [ ] 14.4 Minimizing HTML & Accessibility Testing
-- [ ] 14.5 Progressive Enhancement & Graceful Degradation
+| Attribute | Description |
+|-----------|-------------|
+| `onclick` | Fires when element is clicked |
+| `ondblclick` | Fires on double click |
+| `oninput` | Fires when input value changes |
+| `onchange` | Fires after value change |
+| `onsubmit` | Fires on form submit |
+| `onfocus` | Fires when focused |
+| `onblur` | Fires when focus leaves |
+| `onkeydown` | Key pressed |
+| `onkeyup` | Key released |
+| `onmouseenter` | Mouse enters element |
+| `onmouseleave` | Mouse leaves element |
+| `onscroll` | Fires during scrolling |
 
-## ✅ Module 15 — Project Work & Real-World HTML
+## 🔍 SEO & Metadata
 
-- [ ] 15.1 Build a Personal Portfolio Website
-- [ ] 15.2 Create a Blog Page with Articles & Comments
-- [ ] 15.3 Design a Form-heavy Website (Registration, Contact Form)
-- [ ] 15.4 Create an HTML5 Multimedia Page
-- [ ] 15.5 Final Project: Full Multi-page Website (with navigation, forms, tables, media, semantic structure, accessibility & SEO
+| Tag / Attribute | Purpose |
+|-----------------|---------|
+| `meta charset` | Character encoding |
+| `meta viewport` | Responsive layout |
+| `meta description` | SEO description |
+| `meta keywords` | Search keywords (legacy) |
+| `meta robots` | Search engine crawling |
+| `canonical` | Preferred URL |
+| Open Graph Tags | Social sharing |
+| Twitter Card Tags | Twitter previews |
+| `theme-color` | Browser UI color |
 
+
+## ♿ Accessibility Best Practices
+
+- [ ] Semantic HTML usage
+- [ ] Keyboard navigation support
+- [ ] Proper heading hierarchy
+- [ ] Alt text for images
+- [ ] Label association for forms
+- [ ] ARIA roles and states
+- [ ] Focus management
+- [ ] Color contrast accessibility
+- [ ] Screen reader support
+- [ ] Landmark elements (`main`, `nav`, `aside`)
+
+
+## 🔌 HTML APIs
+
+- [ ] Canvas API
+- [ ] Drag and Drop API
+- [ ] Fullscreen API
+- [ ] Web Storage API
+- [ ] Geolocation API
+- [ ] Web Workers API
+- [ ] Web Components API
+- [ ] Intersection Observer API
+- [ ] Clipboard API
+- [ ] File API
+
+
+## 🚀 Rendering & Performance
+
+- [ ] Critical Rendering Path
+- [ ] Lazy Loading
+- [ ] Preload / Prefetch / Preconnect
+- [ ] Async vs Defer Scripts
+- [ ] Image Optimization
+- [ ] Responsive Images
+- [ ] Resource Priorities
+- [ ] DOM Reflow & Repaint
+
+## 🔐 HTML Security Best Practices
+
+- [ ] Content Security Policy (CSP)
+- [ ] XSS Prevention
+- [ ] iframe sandboxing
+- [ ] Referrer Policy
+- [ ] Secure form handling
+- [ ] autocomplete security
+- [ ] HTTPS best practices
