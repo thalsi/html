@@ -73,7 +73,28 @@
 
 
 
+    <button popovertarget="formModal">Click</button>
 
+    <div id="formModal" popover="manual">
+        Model
+    </div>
+
+    <button
+  popovertarget="profile"
+  popovertargetaction="toggle">
+  Profile
+</button>
+
+<div popover id="profile">
+  <h3>User Profile</h3>
+  <p>Name: John</p>
+
+  <button
+    popovertarget="profile"
+    popovertargetaction="hide">
+    Close
+  </button>
+</div>
 
     <script src="test.js"></script>
 </body>
