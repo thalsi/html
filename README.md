@@ -50,7 +50,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 
 ## 📑 Content Sectioning
 
-| ✅ | Element       | Type   | Description                    | Key Attributes |
+| ✅ | Element      | Type  | Description                   | Key Attributes |
 |----|--------------|--------|--------------------------------|----------------|
 | [x] | `<header>`  | Block  | Introductory content           | None           |
 | [x] | `<footer>`  | Block  | Footer content                 | None           |
