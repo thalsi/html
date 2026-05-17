@@ -124,7 +124,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x] | `<dfn>`    | Inline | Definition term                            | None                      |
 | [x] | `<data>`   | Inline | Machine-readable value                     | `value`                   |
 
----
+--- 
 
 ## 🖼️ Media & Embedded Content
 
