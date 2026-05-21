@@ -17,7 +17,31 @@
   <option value="Kannur">
 </datalist>
 
+<form>
 
+  <label for="appointment">
+    Appointment
+  </label>
+
+  <input
+    type="datetime-local"
+    id="appointment"
+    name="appointment"
+    required
+    min="2026-01-01T09:00"
+    max="2026-12-31T18:00"
+    value="2026-05-21T10:30"
+    step="1800"
+    autocomplete="off"
+    autofocus
+    title="Select appointment date and time"
+  >
+
+  <button type="submit">
+    Submit
+  </button>
+
+</form>
 
     
 </body>
