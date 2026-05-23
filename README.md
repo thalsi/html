@@ -382,6 +382,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 </select>
 
 ```
+
 ## 🕹️ Interactive Elements
 
 | ✅ | Element        | Type   | Description                         | Key Attributes |
@@ -403,6 +404,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x] | `<portal>` | Block | Experimental page embedding |
 
 ---
+
 ## 🧯 Deprecated / Obsolete Elements
 
 | ✅ | Element        | Type      | Description                               | Use Instead                    |
@@ -437,6 +439,7 @@ All standard HTML elements, grouped by category with attributes and usage notes.
 | [x] | `referrerpolicy`   | `<img>`, `<iframe>`, `<a>` | Controls referrer information sent     | `<img referrerpolicy="no-referrer">` |
 | [x] | `sandbox`          | `<iframe>`       | Restricts embedded iframe capabilities           | `<iframe sandbox>` |
 ---
+
 ## ♿ Accessibility (ARIA Attributes)
 
 | ✅ | Attribute              | Description                                           | Common Values / Example              |
