@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" >
+
+    <input type="text" list="cities">
+
+<datalist id="cities">
+  <option value="Kochi">
+  <option value="Calicut">
+  <option value="Kannur">
+</datalist>
+
+<form>
+
+  <label for="appointment">
+    Appointment
+  </label>
+
+  <input
+    type="datetime-local"
+    id="appointment"
+    name="appointment"
+    required
+    min="2026-01-01T09:00"
+    max="2026-12-31T18:00"
+    value="2026-05-21T10:30"
+    step="1800"
+    autocomplete="off"
+    autofocus
+    title="Select appointment date and time"
+  >
+
+  <button type="button">
+    Submit
+  </button>
+
+</form>
+
+
+<button type="button">Click</button>
+  <input
+    type="button"
+    value="Show Alert"
+    onclick="alert('Button Clicked!')"
+    title="Click to show alert"
+  >
+    
+</body>
+</html>
